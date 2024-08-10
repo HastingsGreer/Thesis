@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Symmetries of the image registration problem and their application to learning based solutions}
+\author{Hastings Greer }
+\date{April 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Image registration is a core tool for medical imaging studies. In my thesis, I seek to improve the performance of learning based approaches on this task through a three pronged-approach. First, as a foundation, I am developing the notation for registration algorithms. By writing registration algorithms as operators, it becomes ergonomic to prove properties of these algorithms at the blackboard. Second, I have developed and developing software that allows our production code to share notation and structure with our blackboard results. We use these tools to exploit symmetries (inverse consistency and spatial equivariance) that the solution to the registration problem should have in order to regularize and accelerate training.
+
+
+
+\section{Notation}
+
+Careful development of notation is a fundamental component of progress in image registration, and one that is easily overlooked (and difficult to publish in conferences!) 
+
+\subsection{Pre-existing Notation}
+The standard in the field of image registration is to describe loss functions such as similarity loss and regularization loss with typeset equations, but represent the registration algorithm itself using a flowchart. \cite{balakrishnan2019voxelmorph} Follows this pattern exactly, although the relatively simple internal structure of their approach means that there is little structure to capture with improved notation. Multistep architectures such as \cite{shen2019networks, mok2020large} use flowcharts along with prose to clarify ambiguities. The need for new notation comes into the forefront int LapIRN \cite{mok2020large} where there is significant 
+Across these papers, there is the standard that the images are functions from a domain to intensities $I: \Omega \rightarrow \mathcal{R}$ and the transform is a function from the image domain to the image domain $\varphi: \Omega \rightarrow \Omega$.
+
+The canonical unsupervised registration loss in this notation is 
+
+$$ \mathcal{L}_\text{sim} = \text{Sim}(I^\text{moving} \circ  \varphi , I^\text{fixed}) $$
+
+(In about half of works in the literature, $\varphi$ is used to indicate the a map from the moving space to the fixed space, and then the map used in the similarity loss is written $\varphi^{-1}$ to indicate that the map is used to pull back the moving image features. In these works, $'\varphi'$ is never computed, so $\varphi^{-1}$ just becomes a long name for the pullback map. I have found that it is better to always talk about the pullback map from the fixed space to the moving space and denote it with a single Greek letter, as otherwise the equations always have $\square^{-1}$ dotted about in an unhelpful way, especially as writing it on every map slows whiteboard analysis, I want to use the superscript space for other information, and only including the inverse symbol sometimes is tremendously confusing.)
+\subsection{Registration algorithms as the primary object of study}
+
+My central concept in notation is to describe registration algorithms $\Phi: \left( (\Omega \rightarrow \mathcal{R}) \times (\Omega \rightarrow \mathcal{R}) \right)  \rightarrow (\Omega \rightarrow \Omega) $.
+\footnote{Cyclemorph \cite{cyclemorph} uses a similar notation, refering to the maps from moving to fixed and fixed to moving as $\phi_{XY}$ and $\phi_{YX}$, but does not elaborate that arbitrary expressions can be substituted for X and Y} These algorithms take in a pair of images, and return a map. Written with this notation, the unsupervised registration loss becomes
+
+$$ \mathcal{L}_\text{sim} = \text{Sim}(I^\text{moving} \circ  \Phi[I^\text{moving}, I^\text{fixed}] , I^\text{fixed}) $$
+
+By focusing on the properties of registration algorithms $\Phi$ instead of maps $\varphi$, it becomes easy to succinctly describe symmetries of these algorithms, and to regularize how the transform varies as images change, instead of just how the transform varies in space. 
+
+As an example, one of the simplest regularization losses based on a symmetry is to require that the registration algorithm be symmetric. One of the early works advocating this approach for image registration is CycleMorph.
+
+\subsection{Parallelism of Notation and Code}
+
+In my notation, the inverse consistency loss can be written succinctly and unambiguously as 
+
+$$ \mathcal{L}_{inv} = ||\Phi[I^A, I^B] \circ \Phi[I^B, I^A] - id||^2_2$$
+
+$\Phi$ is a torch module, and we take seriously that it returns a function, not a tensor- it returns a python function that maps tensors of coordinates to tensors of coordinates. Thus,  
+
+
+\section{Related Work}
+
+
+
+\cite{Mok_2020_CVPR, iglesias2023easyreg}
+
+
+\section{Components of the Thesis already published}
+
+\subsection{ICON}
+\begin{abstract}
+    
+  Learning maps between data samples is fundamental. Applications range from representation learning, image translation and generative modeling, to the estimation of spatial deformations. Such maps relate feature vectors, or map between feature spaces. Well-behaved maps should be regular, which can be imposed explicitly or may emanate from the data itself. We explore what induces regularity for spatial transformations, e.g., when computing image registrations. Classical optimization-based models compute maps between pairs of samples and rely on an appropriate regularizer for well-posedness. Recent deep learning approaches have attempted to avoid using such regularizers altogether by relying on the sample population instead. We explore if it is possible to obtain spatial regularity using an inverse consistency loss only and elucidate what explains map regularity in such a context. We find that deep networks combined with an inverse consistency loss and randomized off-grid interpolation yield well behaved, approximately diffeomorphic, spatial transformations. Despite the simplicity of this approach, our experiments present compelling evidence, on both synthetic and real data, that regular maps can be obtained without carefully tuned explicit regularizers, while achieving competitive registration performance.%and only marginal degradation in registration performance.
+\end{abstract}
+The first publication of the thesis, \cite{greer2021icon}, was focused on a novel approach to regularizing image registration: optimizing for inverse consistency and then getting regularity as a side effect. This approach only had one hyperparameter, which was aspirationally could allow training on a new dataset with less tuning needed than multigaussian regularizers, which have may hyperparameters to manually adjust. This publication introduced the "Registration Network" notation, including explicity denoting the input images to the registration network, and the operators TwoStep and Downsample that allow hierarchical multistep registration networks to be constructed.
+\subsection{GradICON}
+
+\begin{abstract}
+
+	We present an approach to learning regular spatial transformations between image pairs in the context of medical image registration. Contrary to optimization-based registration techniques and many modern learning-based methods, we do not directly penalize transformation irregularities but instead promote transformation regularity via an inverse consistency penalty. We use a neural network to predict a map between a source and a target image as well as the map when swapping the source and target images. Different from existing approaches, we compose these two resulting maps and regularize deviations of the \emph{Jacobian} of this composition from the identity matrix. This regularizer -- \texttt{\textit{GradICON}} -- results in much better convergence when training registration models compared to promoting inverse consistency of the composition of maps directly while retaining the desirable implicit regularization effects of the latter. We achieve state-of-the-art registration performance on a variety of real-world medical image datasets using a single set of hyperparameters and a single non-dataset-specific training protocol. 
+\end{abstract}
+
+This paper fulfilled the promise of the ICON paper that an inverse consistency based regularizer could be easier to tune than existing approaches. 
+\subsection{ConstrICON}
+\cite{Greer2023InverseCB}
+
+
+\begin{abstract}
+
+	Inverse consistency is a desirable property for image registration. We propose a simple technique to make a neural registration network inverse consistent by construction, as a consequence of its structure, as long as it parameterizes its output transform by a Lie group. We extend this technique to multi-step %, ie coarse to fine, 
+	neural registration by composing many such networks in a way that preserves inverse consistency. This multi-step approach also allows for inverse-consistent coarse to fine registration. We evaluate our technique on synthetic 2-D data and four 3-D medical image registration tasks and obtain excellent registration accuracy while assuring inverse consistency.
+
+\end{abstract}
+
+Here, we begin to see the power of registration network notation for formally proving properties of multistep registration algorithms. 
+\section{Ongoing work and plan for the Thesis}
+
+\subsection{Coordinate Attention with Refinement Layers}
+
+\begin{abstract}
+ Image registration estimates spatial correspondences between a pair of images. These estimates are typically obtained via numerical optimization or regression by a deep network. A desirable property of such estimators is that a correspondence estimate (e.g., the true oracle correspondence) for an image pair is maintained under deformations of the input images. Formally, the estimator should be equivariant to a desired class of image transformations. In this work, we present careful analyses of the desired equivariance properties in the context of multi-step deep registration networks. Based on these analyses we 1) introduce the notions of $[U,U]$ equivariance (network equivariance to the \emph{same} deformations of the input images) and $[W,U]$ equivariance (where input images can undergo \emph{different} deformations); we 2) show that in a suitable multi-step registration setup it is sufficient for overall $[W,U]$ equivariance if the first step has $[W,U]$ equivariance and all others have $[U,U]$ equivariance; we 3) show that common displacement-predicting networks only exhibit $[U,U]$ equivariance to translations instead of the more powerful $[W,U]$ equivariance; and we 4) show how to achieve multi-step $[W,U]$ equivariance via a coordinate-attention mechanism combined with displacement-predicting refinement layers (CARL). Overall, our approach obtains excellent practical registration performance on several 3D medical image registration tasks and outperforms existing unsupervised approaches for the challenging problem of abdomen registration.
+\end{abstract}
+
+This paper continues the theme of calculating properties of multistep registration networks by manipulating registration network notation. 
+
+I have submitted CARL to Neurips 2024 and am awaiting a response. If it is rejected, I plan to resubmit to CVPR.
+
+
+
+\subsection{Equivariance of Iterated registration steps}
+
+\subsection{Atlas Building, Similarity Measure investigation, and Registration Foundation Models}
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

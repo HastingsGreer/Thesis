@@ -165,7 +165,10 @@ registration networks by manipulating registration network notation.
 I have submitted CARL to Neurips 2024 and am awaiting a response. If it is
 rejected, I plan to resubmit to CVPR. For the resubmission, I will add in the 2nd step of training from the GradICON paper to see if this boosts performance, and increase the number of evaluation pairs on the Abdomen1k dataset to 200.
 
+The CVPR submission deadline is in November, but I intend to finish these changes by the end of September
+
 \subsection{Equivariance of Iterated registration steps}
+
 
 
 
@@ -173,9 +176,18 @@ rejected, I plan to resubmit to CVPR. For the resubmission, I will add in the 2n
 
 The final paper that I aim to produce in this thesis is an extension of the sequence uniGradICON and multiGradICON. These two papers, which I helped to coauthor, developed a foundation model based on the GradICON architecture and training procedure, which is general- the same model is used across different data sets. In the HugeGradICON paper I will scale both the dataset diversity and model size- this is of course what you do with a foundation model. Where the "Equivariance of Iterated Registration Steps" Paper leans heavily toward methodological novelty and mathematical tricks, the HugeGradICON paper will be entirely practical, aiming to boost the performance of the approach on the kinds of cases that it is being used on in the wild. We have a unique opportunity to learn about its real world useage from github issues:
 
-Users do not know that brain extraction is an important part of accurate, modern brain registration. The model needs to either enforce brain extraction for brain registration, as is done in EasyReg \cite{easyReg}, or perform adequadely when brain extraction is not performed. We will augment the training set with non-brain-extracted images, and test performance without brain extraction, and add an open source brain extraction model to the CLI if performance without it is not adequate.
+Users will use the registration tool on non-brain-extracted images. The model needs to either enforce brain extraction for brain registration, as is done in EasyReg \cite{easyReg}, or perform adequadely when brain extraction is not performed. We will augment the training set with non-brain-extracted images, and test performance without brain extraction, and add an open source brain extraction model to the CLI if performance without it is not adequate.
 
-Users do not always have access to original images before resampling. Therefore, our model needs to accurately register images that have black bars from aspect ratio differences.
+In addition, I will use the label image / input image distinction and randomization strategy introduced in MultiGradICON to attempt to boost registration performance on non-brain-extracted images, by sometimes running the model on the brain extracted image but evaluating the loss on the full head image, and vice versa.
+
+Users do not always have access to original images before resampling. Therefore, our model needs to accurately register images that have black bars introduced by the resampling procedure. To achieve this, I will use the "Label image" / "Input" image distinction again, by only adding black bars to the network input image, but not the image on which the loss is evaluated.
+
+Multimodal registration is necessary. The multiGradICON research has found that adding multimodal registration to the training set does improve performance on multimodal tasks, but harms performance on unimodal tasks. This should be amelioriated by increasing network capacity. I intend to further boost multimodal registration performance by adding SynthMorph shapes and brains datasets to the composite dataset.
+
+ww
+
+
+
 
 
 

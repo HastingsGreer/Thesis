@@ -1,1011 +1,1460 @@
-@misc{cohen2016group,
-      title={Group Equivariant Convolutional Networks}, 
-      author={Taco S. Cohen and Max Welling},
-      year={2016},
-      eprint={1602.07576},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@inproceedings{cohen2016group,
+	title = {Group equivariant convolutional networks},
+	author = {Cohen, Taco and Welling, Max},
+	year = 2016,
+	booktitle = {ICML},
+	pages = {2990--2999},
+	organization = {PMLR},
+	eprint = {1602.07576},
+	archiveprefix = {arXiv},
+	primaryclass = {cs.LG}
 }
-
 @inproceedings{Yu22a,
-    title = {{KeyMorph}: Robust Multi-modal Affine Registration via Unsupervised Keypoint Detection},
-    author = {Yu, Evan M. and Wang, Alan Q. and Dalca, Adrian V. and Sabuncu, Mert R.},
-    booktitle = {MIDL},
-    year = 2022}
-
-@inproceedings{Karras2021,
-    author = {Tero Karras and Miika Aittala and Samuli Laine and Erik H\"ark\"onen and Janne Hellsten and Jaakko Lehtinen and Timo Aila},
-    title = {Alias-Free Generative Adversarial Networks},
-    booktitle = {NeurIPS},
-    year = {2021}
+	title = {{KeyMorph}: Robust Multi-modal Affine Registration via Unsupervised Keypoint Detection},
+	author = {Yu, Evan M. and Wang, Alan Q. and Dalca, Adrian V. and Sabuncu, Mert R.},
+	year = 2022,
+	booktitle = {MIDL}
 }
-
-@InProceedings{Truong_2021_ICCV,
-    author    = {Truong, Prune and Danelljan, Martin and Yu, Fisher and Van Gool, Luc},
-    title     = {Warp Consistency for Unsupervised Learning of Dense Correspondences},
-    booktitle = {ICCV},
-    year      = {2021},
+@article{karras2021alias,
+	title = {Alias-free generative adversarial networks},
+	author = {Karras, Tero and Aittala, Miika and Laine, Samuli and H{\"a}rk{\"o}nen, Erik and Hellsten, Janne and Lehtinen, Jaakko and Aila, Timo},
+	year = 2021,
+	journal = {NeurIPS},
+	volume = 34,
+	pages = {852--863}
 }
-
-@article{iglesias2023easyreg,
-  title={{EasyReg}: A ready-to-use deep learning tool for symmetric affine and nonlinear brain {MRI} registration},
-  author={Iglesias, Juan Eugenio},
-  year={2023}
+@inproceedings{Truong_2021_ICCV,
+	title = {Warp Consistency for Unsupervised Learning of Dense Correspondences},
+	author = {Truong, Prune and Danelljan, Martin and Yu, Fisher and Van Gool, Luc},
+	year = 2021,
+	booktitle = {ICCV}
 }
 @article{miller2001group,
-  title={Group actions, homeomorphisms, and matching: A general framework},
-  author={Miller, Michael I and Younes, Laurent},
-  journal={IJCV},
-  volume={41},
-  number={1},
-  pages={61--84},
-  year={2001}}
-
+	title = {Group actions, homeomorphisms, and matching: A general framework},
+	author = {Miller, Michael I and Younes, Laurent},
+	year = 2001,
+	journal = {IJCV},
+	volume = 41,
+	number = 1,
+	pages = {61--84}
+}
 @article{harms2018972,
-title = {Extending the Human Connectome Project across ages: Imaging protocols for the Lifespan Development and Aging projects},
-journal = {NeuroImage},
-volume = {183},
-pages = {972-984},
-year = {2018},
-issn = {1053-8119},
-doi = {https://doi.org/10.1016/j.neuroimage.2018.09.060},
-url = {https://www.sciencedirect.com/science/article/pii/S1053811918318652},
-author = {Michael P Harms and Leah H Somerville and Beau M Ances and Jesper Andersson and Deanna M Barch and Matteo Bastiani and Susan Y Bookheimer and Timothy B Brown and Randy L Buckner and Gregory C Burgess and Timothy S Coalson and Michael A Chappell and Mirella Dapretto and Gwenaëlle Douaud and Bruce Fischl and Matthew F Glasser and Douglas N Greve and Cynthia Hodge and Keith W Jamison and Saad Jbabdi and Sridhar Kandala and Xiufeng Li and Ross W Mair and Silvia Mangia and Daniel Marcus and Daniele Mascali and Steen Moeller and Thomas E Nichols and Emma C Robinson and David H Salat and Stephen M Smith and Stamatios N Sotiropoulos and Melissa Terpstra and Kathleen M Thomas and M Dylan Tisdall and Kamil Ugurbil and Andre {van der Kouwe} and Roger P. Woods and Lilla Z\"ollei and David C. {Van Essen} and Essa Yacoub},
-keywords = {Connectomics, Resting-state, Functional connectivity, Task, Diffusion, Perfusion, Development, Aging, Lifespan},
-abstract = {The Human Connectome Projects in Development (HCP-D) and Aging (HCP-A) are two large-scale brain imaging studies that will extend the recently completed HCP Young-Adult (HCP-YA) project to nearly the full lifespan, collecting structural, resting-state fMRI, task-fMRI, diffusion, and perfusion MRI in participants from 5 to 100+ years of age. HCP-D is enrolling 1300+ healthy children, adolescents, and young adults (ages 5–21), and HCP-A is enrolling 1200+ healthy adults (ages 36–100+), with each study collecting longitudinal data in a subset of individuals at particular age ranges. The imaging protocols of the HCP-D and HCP-A studies are very similar, differing primarily in the selection of different task-fMRI paradigms. We strove to harmonize the imaging protocol to the greatest extent feasible with the completed HCP-YA (1200+ participants, aged 22–35), but some imaging-related changes were motivated or necessitated by hardware changes, the need to reduce the total amount of scanning per participant, and/or the additional challenges of working with young and elderly populations. Here, we provide an overview of the common HCP-D/A imaging protocol including data and rationales for protocol decisions and changes relative to HCP-YA. The result will be a large, rich, multi-modal, and freely available set of consistently acquired data for use by the scientific community to investigate and define normative developmental and aging related changes in the healthy human brain.}
+	title = {Extending the Human Connectome Project across ages: Imaging protocols for the Lifespan Development and Aging projects},
+	author = {Harms, Michael P and Somerville, Leah H and Ances, Beau M and Andersson, Jesper and Barch, Deanna M and Bastiani, Matteo and Bookheimer, Susan Y and Brown, Timothy B and Buckner, Randy L and Burgess, Gregory C and others},
+	year = 2018,
+	journal = {NeuroImage},
+	publisher = {Elsevier},
+	volume = 183,
+	pages = {972--984},
+	doi = {https://doi.org/10.1016/j.neuroimage.2018.09.060},
+	issn = {1053-8119},
+	url = {https://www.sciencedirect.com/science/article/pii/S1053811918318652},
+	keywords = {Connectomics, Resting-state, Functional connectivity, Task, Diffusion, Perfusion, Development, Aging, Lifespan},
+	abstract = {The Human Connectome Projects in Development (HCP-D) and Aging (HCP-A) are two large-scale brain imaging studies that will extend the recently completed HCP Young-Adult (HCP-YA) project to nearly the full lifespan, collecting structural, resting-state fMRI, task-fMRI, diffusion, and perfusion MRI in participants from 5 to 100+ years of age. HCP-D is enrolling 1300+ healthy children, adolescents, and young adults (ages 5–21), and HCP-A is enrolling 1200+ healthy adults (ages 36–100+), with each study collecting longitudinal data in a subset of individuals at particular age ranges. The imaging protocols of the HCP-D and HCP-A studies are very similar, differing primarily in the selection of different task-fMRI paradigms. We strove to harmonize the imaging protocol to the greatest extent feasible with the completed HCP-YA (1200+ participants, aged 22–35), but some imaging-related changes were motivated or necessitated by hardware changes, the need to reduce the total amount of scanning per participant, and/or the additional challenges of working with young and elderly populations. Here, we provide an overview of the common HCP-D/A imaging protocol including data and rationales for protocol decisions and changes relative to HCP-YA. The result will be a large, rich, multi-modal, and freely available set of consistently acquired data for use by the scientific community to investigate and define normative developmental and aging related changes in the healthy human brain.}
 }
-
 @article{avants2008symmetric,
-  title={Symmetric diffeomorphic image registration with cross-correlation: evaluating automated labeling of elderly and neurodegenerative brain},
-  author={Avants, Brian B and Epstein, Charles L and Grossman, Murray and Gee, James C},
-  journal={MedIA},
-  volume={12},
-  number={1},
-  pages={26--41},
-  year={2008},
+	title = {Symmetric diffeomorphic image registration with cross-correlation: evaluating automated labeling of elderly and neurodegenerative brain},
+	author = {Avants, Brian B and Epstein, Charles L and Grossman, Murray and Gee, James C},
+	year = 2008,
+	journal = {MedIA},
+	volume = 12,
+	number = 1,
+	pages = {26--41}
 }
-
-
-@InProceedings{Mok_2020_CVPR,
-author = {Mok, Tony C.W. and Chung, Albert C.S.},
-title = {Fast Symmetric Diffeomorphic Image Registration with Convolutional Neural Networks},
-booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2020}
-}
-
-
-
 @article{arsigny2009fast,
-  title={A fast and log-{Euclidean} polyaffine framework for locally linear registration},
-  author={Arsigny, Vincent and Commowick, Olivier and Ayache, Nicholas and Pennec, Xavier},
-  journal={J. Math. Imaging Vis.},
-  volume={33},
-  number={2},
-  pages={222--238},
-  year={2009},
-  publisher={Springer}
+	title = {A fast and log-{Euclidean} polyaffine framework for locally linear registration},
+	author = {Arsigny, Vincent and Commowick, Olivier and Ayache, Nicholas and Pennec, Xavier},
+	year = 2009,
+	journal = {J. Math. Imaging Vis.},
+	publisher = {Springer},
+	volume = 33,
+	number = 2,
+	pages = {222--238}
 }
-
 @article{mang2016H1,
-author = {Mang, Andreas and Biros, George},
-year = {2016},
-month = {08},
-pages = {1154-1194},
-title = {Constrained {H1}-regularization schemes for diffeomorphic image registration},
-volume = {9},
-journal = {SIAM J. Imaging Sci.}}
-
-
-
+	title = {Constrained H\^{}1-regularization schemes for diffeomorphic image registration},
+	author = {Mang, Andreas and Biros, George},
+	year = 2016,
+	journal = {SIAM journal on imaging sciences},
+	publisher = {SIAM},
+	volume = 9,
+	number = 3,
+	pages = {1154--1194},
+	month = {08}
+}
 @inproceedings{bian2022learning,
-  title={Learning pixel trajectories with multiscale contrastive random walks},
-  author={Bian, Zhangxing and Jabri, Allan and Efros, Alexei A and Owens, Andrew},
-  booktitle={CVPR},
-  year={2022}
+	title = {Learning pixel trajectories with multiscale contrastive random walks},
+	author = {Bian, Zhangxing and Jabri, Allan and Efros, Alexei A and Owens, Andrew},
+	year = 2022,
+	booktitle = {CVPR}
 }
-
 @inproceedings{butler2012naturalistic,
-  title={A naturalistic open source movie for optical flow evaluation},
-  author={Butler, Daniel J and Wulff, Jonas and Stanley, Garrett B and Black, Michael J},
-  booktitle={ECCV},
-  year={2012}}
-
+	title = {A naturalistic open source movie for optical flow evaluation},
+	author = {Butler, Daniel J and Wulff, Jonas and Stanley, Garrett B and Black, Michael J},
+	year = 2012,
+	booktitle = {ECCV}
+}
 @inproceedings{ilg2017flownet,
-  title={Flownet 2.0: Evolution of optical flow estimation with deep networks},
-  author={Ilg, Eddy and Mayer, Nikolaus and Saikia, Tonmoy and Keuper, Margret and Dosovitskiy, Alexey and Brox, Thomas},
-  booktitle={CVPR},
-  year={2017}
+	title = {Flownet 2.0: Evolution of optical flow estimation with deep networks},
+	author = {Ilg, Eddy and Mayer, Nikolaus and Saikia, Tonmoy and Keuper, Margret and Dosovitskiy, Alexey and Brox, Thomas},
+	year = 2017,
+	booktitle = {CVPR}
 }
-
 @inproceedings{dosovitskiy2015flownet,
-  title={Flownet: Learning optical flow with convolutional networks},
-  author={Dosovitskiy, Alexey and Fischer, Philipp and Ilg, Eddy and Hausser, Philip and Hazirbas, Caner and Golkov, Vladimir and Van Der Smagt, Patrick and Cremers, Daniel and Brox, Thomas},
-  booktitle={CVPR},
-  year={2015}
+	title = {Flownet: Learning optical flow with convolutional networks},
+	author = {Dosovitskiy, Alexey and Fischer, Philipp and Ilg, Eddy and Hausser, Philip and Hazirbas, Caner and Golkov, Vladimir and Van Der Smagt, Patrick and Cremers, Daniel and Brox, Thomas},
+	year = 2015,
+	booktitle = {CVPR}
 }
-
-@article{huang2022flowformer,
-  title={FlowFormer: A Transformer Architecture for Optical Flow},
-  author={Huang, Zhaoyang and Shi, Xiaoyu and Zhang, Chao and Wang, Qiang and Cheung, Ka Chun and Qin, Hongwei and Dai, Jifeng and Li, Hongsheng},
-  journal={arXiv preprint \texttt{arXiv:2203.16194}},
-  year={2022}
+@inproceedings{huang2022flowformer,
+	title = {Flowformer: A transformer architecture for optical flow},
+	author = {Huang, Zhaoyang and Shi, Xiaoyu and Zhang, Chao and Wang, Qiang and Cheung, Ka Chun and Qin, Hongwei and Dai, Jifeng and Li, Hongsheng},
+	year = 2022,
+	booktitle = {ECCV},
+	pages = {668--685},
+	organization = {Springer},
+	journal = {arXiv preprint \texttt{arXiv:2203.16194}}
 }
-
 @inproceedings{sun2018pwc,
-  title={Pwc-net: {CNN}s for optical flow using pyramid, warping, and cost volume},
-  author={Sun, Deqing and Yang, Xiaodong and Liu, Ming-Yu and Kautz, Jan},
-  booktitle={CVPR},
-  year={2018}
+	title = {Pwc-net: {CNN}s for optical flow using pyramid, warping, and cost volume},
+	author = {Sun, Deqing and Yang, Xiaodong and Liu, Ming-Yu and Kautz, Jan},
+	year = 2018,
+	booktitle = {CVPR}
 }
-
 @inproceedings{teed2020raft,
-  title={Raft: Recurrent all-pairs field transforms for optical flow},
-  author={Teed, Zachary and Deng, Jia},
-  booktitle={ECCV},
-  year={2020}}
-
+	title = {Raft: Recurrent all-pairs field transforms for optical flow},
+	author = {Teed, Zachary and Deng, Jia},
+	year = 2020,
+	booktitle = {ECCV}
+}
 @article{horn1981determining,
-  title={Determining optical flow},
-  author={Horn, Berthold KP and Schunck, Brian G},
-  journal={Artif. Intell.},
-  volume={17},
-  number={1-3},
-  pages={185--203},
-  year={1981}}
-
+	title = {Determining optical flow},
+	author = {Horn, Berthold KP and Schunck, Brian G},
+	year = 1981,
+	journal = {Artif. Intell.},
+	volume = 17,
+	number = {1-3},
+	pages = {185--203}
+}
 @article{fortun2015optical,
-  title={Optical flow modeling and computation: A survey},
-  author={Fortun, Denis and Bouthemy, Patrick and Kervrann, Charles},
-  journal={Comput. Vis. Image Underst.},
-  volume={134},
-  pages={1--21},
-  year={2015}}
-
+	title = {Optical flow modeling and computation: A survey},
+	author = {Fortun, Denis and Bouthemy, Patrick and Kervrann, Charles},
+	year = 2015,
+	journal = {Comput. Vis. Image Underst.},
+	volume = 134,
+	pages = {1--21}
+}
 @article{han2021deep,
-  title={Deep-learning-based image registration and automatic segmentation of organs-at-risk in cone-beam {CT} scans from high-dose radiation treatment of pancreatic cancer},
-  author={Han, Xu and Hong, Jun and Reyngold, Marsha and Crane, Christopher and Cuaron, John and Hajj, Carla and Mann, Justin and Zinovoy, Melissa and Greer, Hastings and Yorke, Ellen and Mageras, Gig and Niethammer, Marc},
-  journal={J. Med. Phys.},
-  volume={48},
-  number={6},
-  pages={3084--3095},
-  year={2021}}
-
+	title = {Deep-learning-based image registration and automatic segmentation of organs-at-risk in cone-beam {CT} scans from high-dose radiation treatment of pancreatic cancer},
+	author = {Han, Xu and Hong, Jun and Reyngold, Marsha and Crane, Christopher and Cuaron, John and Hajj, Carla and Mann, Justin and Zinovoy, Melissa and Greer, Hastings and Yorke, Ellen and Mageras, Gig and Niethammer, Marc},
+	year = 2021,
+	journal = {J. Med. Phys.},
+	volume = 48,
+	number = 6,
+	pages = {3084--3095}
+}
 @article{evans2012brain,
-  title={Brain templates and atlases},
-  author={Evans, Alan C and Janke, Andrew L and Collins, D Louis and Baillet, Sylvain},
-  journal={Neuroimage},
-  volume={62},
-  number={2},
-  pages={911--922},
-  year={2012},
+	title = {Brain templates and atlases},
+	author = {Evans, Alan C and Janke, Andrew L and Collins, D Louis and Baillet, Sylvain},
+	year = 2012,
+	journal = {NeuroImage},
+	volume = 62,
+	number = 2,
+	pages = {911--922}
 }
-
 @article{viergever2016survey,
-  title={A survey of medical image registration},
-  author={Viergever, Max A and Maintz, JB Antoine and Klein, Stefan and Murphy, Keelin and Staring, Marius and Pluim, Josien PW},
-  journal={MedIA},
-  volume={33},
-  pages={140--144},
-  year={2016},
+	title = {A survey of medical image registration},
+	author = {Viergever, Max A and Maintz, JB Antoine and Klein, Stefan and Murphy, Keelin and Staring, Marius and Pluim, Josien PW},
+	year = 2016,
+	journal = {MedIA},
+	volume = 33,
+	pages = {140--144}
 }
-
 @article{kessler2006image,
-  title={Image registration and data fusion in radiation therapy},
-  author={Kessler, Marc L},
-  journal={Brit. J. Radiol.},
-  volume={79},
-  number={S1},
-  pages={S99--S108},
-  year={2006}}
-
+	title = {Image registration and data fusion in radiation therapy},
+	author = {Kessler, Marc L},
+	year = 2006,
+	journal = {Brit. J. Radiol.},
+	volume = 79,
+	number = {S1},
+	pages = {S99--S108}
+}
 @article{nevitt2006osteoarthritis,
-  title={The osteoarthritis initiative},
-  author={Nevitt, Michael C and Felson, David T and Lester, Gayle},
-  journal={Protocol for the cohort study},
-  volume={1},
-  year={2006}
+	title = {The osteoarthritis initiative},
+	author = {Nevitt, Michael C and Felson, David T and Lester, Gayle},
+	year = 2006,
+	journal = {Protocol for the cohort study},
+	volume = 1
 }
-
 @article{van2012human,
-  title={The Human Connectome Project: a data acquisition perspective},
-  author={Van Essen, David C and Ugurbil, Kamil and Auerbach, Edward and Barch, Deanna and Behrens, Timothy EJ and Bucholz, Richard and Chang, Acer and Chen, Liyong and Corbetta, Maurizio and Curtiss, Sandra W and Della Penna, Stefania and Feinberg, David and Glasser, Matthew F and Harel, Noam and Heath, Andrew C and Larson-Prior, Linda and Marcus, Daniel and Michalareas, Georgios and Moeller, Steen and Oostenfeld, Robert and Peterson, Steve E and Prior, Fred and Schlaggar, Brad L and Smith, Stephen M and Snyder, Abraham Z and Xu, Junqian and Yacoub, Essa and WU-Minn HCP Consortium},
-  journal={Neuroimage},
-  volume={62},
-  number={4},
-  pages={2222--2231},
-  year={2012},
-  publisher={Elsevier}
+	title = {The Human Connectome Project: a data acquisition perspective},
+	author = {Van Essen, David C and Ugurbil, Kamil and Auerbach, Edward and Barch, Deanna and Behrens, Timothy EJ and Bucholz, Richard and Chang, Acer and Chen, Liyong and Corbetta, Maurizio and Curtiss, Sandra W and Della Penna, Stefania and Feinberg, David and Glasser, Matthew F and Harel, Noam and Heath, Andrew C and Larson-Prior, Linda and Marcus, Daniel and Michalareas, Georgios and Moeller, Steen and Oostenfeld, Robert and Peterson, Steve E and Prior, Fred and Schlaggar, Brad L and Smith, Stephen M and Snyder, Abraham Z and Xu, Junqian and Yacoub, Essa and WU-Minn HCP Consortium},
+	year = 2012,
+	journal = {NeuroImage},
+	publisher = {Elsevier},
+	volume = 62,
+	number = 4,
+	pages = {2222--2231}
 }
-
 @article{Charpiat2007,
-author = {Charpiat, Guillaume and Maurel, Pierre and Pons, Jean-Philippe and Keriven, Renaud and Faugeras, Olivier},
-year = {2007},
-month = {07},
-pages = {325-344},
-title = {Generalized Gradients: Priors on Minimization Flows},
-volume = {73},
-journal = {IJCV},
+	title = {Generalized gradients: Priors on minimization flows},
+	author = {Charpiat, Guillaume and Maurel, Pierre and Pons, J-P and Keriven, Renaud and Faugeras, Olivier},
+	year = 2007,
+	journal = {IJCV},
+	publisher = {Springer},
+	volume = 73,
+	pages = {325--344},
+	month = {07}
 }
-
 @article{hermosillo2002variational,
-  title={Variational methods for multimodal image matching},
-  author={Hermosillo, Gerardo and Chefd'Hotel, Christophe and Faugeras, Olivier},
-  journal={IJCV},
-  volume={50},
-  number={3},
-  pages={329--343},
-  year={2002},
+	title = {Variational methods for multimodal image matching},
+	author = {Hermosillo, Gerardo and Chefd'Hotel, Christophe and Faugeras, Olivier},
+	year = 2002,
+	journal = {IJCV},
+	volume = 50,
+	number = 3,
+	pages = {329--343}
 }
-
 @article{holden2007review,
-  title={A review of geometric transformations for nonrigid body registration},
-  author={Holden, Mark},
-  journal={TMI},
-  volume={27},
-  number={1},
-  pages={111--128},
-  year={2007},
+	title = {A review of geometric transformations for nonrigid body registration},
+	author = {Holden, Mark},
+	year = 2007,
+	journal = {TMI},
+	volume = 27,
+	number = 1,
+	pages = {111--128}
 }
-
 @inproceedings{ronneberger2015u,
-  title={U-net: Convolutional networks for biomedical image segmentation},
-  author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
-  booktitle={MICCAI},
-  pages={234--241},
-  year={2015},
+	title = {U-net: Convolutional networks for biomedical image segmentation},
+	author = {Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+	year = 2015,
+	booktitle = {MICCAI},
+	pages = {234--241}
 }
-
 @inproceedings{cciccek20163d,
-  title={{3D U-Net}: learning dense volumetric segmentation from sparse annotation},
-  author={{\c{C}}i{\c{c}}ek, {\"O}zg{\"u}n and Abdulkadir, Ahmed and Lienkamp, Soeren S and Brox, Thomas and Ronneberger, Olaf},
-  booktitle={MICCAI},
-  pages={424--432},
-  year={2016},
+	title = {{3D U-Net}: learning dense volumetric segmentation from sparse annotation},
+	author = {{\c{C}}i{\c{c}}ek, {\"O}zg{\"u}n and Abdulkadir, Ahmed and Lienkamp, Soeren S and Brox, Thomas and Ronneberger, Olaf},
+	year = 2016,
+	booktitle = {MICCAI},
+	pages = {424--432}
 }
-
 @article{yang2017quicksilver,
-  title={Quicksilver: Fast predictive image registration--a deep learning approach},
-  author={Yang, Xiao and Kwitt, Roland and Styner, Martin and Niethammer, Marc},
-  journal={NeuroImage},
-  volume={158},
-  pages={378--396},
-  year={2017},
+	title = {Quicksilver: Fast predictive image registration--a deep learning approach},
+	author = {Yang, Xiao and Kwitt, Roland and Styner, Martin and Niethammer, Marc},
+	year = 2017,
+	journal = {NeuroImage},
+	volume = 158,
+	pages = {378--396}
 }
-
 @inproceedings{arsigny2006log,
-  title={A log-{Euclidean} framework for statistics on diffeomorphisms},
-  author={Arsigny, Vincent and Commowick, Olivier and Pennec, Xavier and Ayache, Nicholas},
-  booktitle={MICCAI},
-    year={2006}
+	title = {A log-{Euclidean} framework for statistics on diffeomorphisms},
+	author = {Arsigny, Vincent and Commowick, Olivier and Pennec, Xavier and Ayache, Nicholas},
+	year = 2006,
+	booktitle = {MICCAI}
 }
-
 @inproceedings{vercauteren2008symmetric,
-  title={Symmetric log-domain diffeomorphic registration: A {Demons}-based approach},
-  author={Vercauteren, Tom and Pennec, Xavier and Perchant, Aymeric and Ayache, Nicholas},
-  booktitle={MICCAI},
-  year={2008}}
-  
+	title = {Symmetric log-domain diffeomorphic registration: A {Demons}-based approach},
+	author = {Vercauteren, Tom and Pennec, Xavier and Perchant, Aymeric and Ayache, Nicholas},
+	year = 2008,
+	booktitle = {MICCAI}
+}
 @article{vialard2012diffeomorphic,
-  title={Diffeomorphic {3D} image registration via geodesic shooting using an efficient adjoint calculation},
-  author={Vialard, Fran{\c{c}}ois-Xavier and Risser, Laurent and Rueckert, Daniel and Cotter, Colin J},
-  journal={IJCV},
-  volume={97},
-  number={2},
-  pages={229--241},
-  year={2012},
+	title = {Diffeomorphic {3D} image registration via geodesic shooting using an efficient adjoint calculation},
+	author = {Vialard, Fran{\c{c}}ois-Xavier and Risser, Laurent and Rueckert, Daniel and Cotter, Colin J},
+	year = 2012,
+	journal = {IJCV},
+	volume = 97,
+	number = 2,
+	pages = {229--241}
 }
-
 @article{christensen2001consistent,
-  title={Consistent image registration},
-  author={Christensen, Gary E and Johnson, Hans J},
-  journal={TMI},
-  volume={20},
-  number={7},
-  pages={568--582},
-  year={2001},
+	title = {Consistent image registration},
+	author = {Christensen, Gary E and Johnson, Hans J},
+	year = 2001,
+	journal = {TMI},
+	volume = 20,
+	number = 7,
+	pages = {568--582}
 }
-
 @inproceedings{shen2021accurate,
-  title={Accurate Point Cloud Registration with Robust Optimal Transport},
-  author={Shen, Zhengyang and Feydy, Jean and Liu, Peirong and Curiale, Ariel H and San Jose Estepar, Ruben and San Jose Estepar, Raul and Niethammer, Marc},
-  booktitle={NeurIPS},
-  year={2021}
+	title = {Accurate Point Cloud Registration with Robust Optimal Transport},
+	author = {Shen, Zhengyang and Feydy, Jean and Liu, Peirong and Curiale, Ariel H and San Jose Estepar, Ruben and San Jose Estepar, Raul and Niethammer, Marc},
+	year = 2021,
+	booktitle = {NeurIPS}
 }
-
 @article{hansen2021graphregnet,
-  title={{GraphRegNet}: Deep graph regularisation networks on sparse keypoints for dense registration of {3D} lung {CTs}},
-  author={Hansen, Lasse and Heinrich, Mattias P},
-  journal={TMI},
-  volume={40},
-  number={9},
-  pages={2246--2257},
-  year={2021},
+	title = {{GraphRegNet}: Deep graph regularisation networks on sparse keypoints for dense registration of {3D} lung {CTs}},
+	author = {Hansen, Lasse and Heinrich, Mattias P},
+	year = 2021,
+	journal = {TMI},
+	volume = 40,
+	number = 9,
+	pages = {2246--2257}
 }
-
 @article{haber2007image,
-  title={Image registration with guaranteed displacement regularity},
-  author={Haber, Eldad and Modersitzki, Jan},
-  journal={IJCV},
-  volume={71},
-  number={3},
-  pages={361--372},
-  year={2007},
-  publisher={Springer}
+	title = {Image registration with guaranteed displacement regularity},
+	author = {Haber, Eldad and Modersitzki, Jan},
+	year = 2007,
+	journal = {IJCV},
+	publisher = {Springer},
+	volume = 71,
+	number = 3,
+	pages = {361--372}
 }
-
 @book{modersitzki2003numerical,
-  title={Numerical methods for image registration},
-  author={Modersitzki, Jan},
-  year={2003},
-  publisher={OUP Oxford}
+	title = {Numerical methods for image registration},
+	author = {Modersitzki, Jan},
+	year = 2003,
+	publisher = {OUP Oxford}
 }
-
 @article{chen2021deep,
-  title={Deep learning in medical image registration},
-  author={Chen, Xiang and Diaz-Pinto, Andres and Ravikumar, Nishant and Frangi, Alejandro F},
-  journal={Prog. biomed. eng. },
-  volume={3},
-  number={1},
-  pages={012003},
-  year={2021},
-  publisher={IOP Publishing}
+	title = {Deep learning in medical image registration},
+	author = {Chen, Xiang and Diaz-Pinto, Andres and Ravikumar, Nishant and Frangi, Alejandro F},
+	year = 2021,
+	journal = {Prog. biomed. eng.},
+	publisher = {IOP Publishing},
+	volume = 3,
+	number = 1,
+	pages = {012003}
 }
-
 @article{regan2011genetic,
-  title={Genetic epidemiology of {COPD (COPDGene)} study design},
-  author={Regan, Elizabeth A and Hokanson, John E and Murphy, James R and Make, Barry and Lynch, David A and Beaty, Terri H and Curran-Everett, Douglas and Silverman, Edwin K and Crapo, James D},
-  journal={{COPD}: J. Chronic Obstr. Pulm. Dis.},
-  volume={7},
-  number={1},
-  pages={32--43},
-  year={2011},
+	title = {Genetic epidemiology of {COPD (COPDGene)} study design},
+	author = {Regan, Elizabeth A and Hokanson, John E and Murphy, James R and Make, Barry and Lynch, David A and Beaty, Terri H and Curran-Everett, Douglas and Silverman, Edwin K and Crapo, James D},
+	year = 2011,
+	journal = {{COPD}: J. Chronic Obstr. Pulm. Dis.},
+	volume = 7,
+	number = 1,
+	pages = {32--43}
 }
-
 @article{castillo2013reference,
-  title={A reference dataset for deformable image registration spatial accuracy evaluation using the {COPDgene} study archive},
-  author={Castillo, Richard and Castillo, Edward and Fuentes, David and Ahmad, Moiz and Wood, Abbie M and Ludwig, Michelle S and Guerrero, Thomas},
-  journal={Phys. Med. Biol.},
-  volume={58},
-  number={9},
-  pages={2861},
-  year={2013},
+	title = {A reference dataset for deformable image registration spatial accuracy evaluation using the {COPDgene} study archive},
+	author = {Castillo, Richard and Castillo, Edward and Fuentes, David and Ahmad, Moiz and Wood, Abbie M and Ludwig, Michelle S and Guerrero, Thomas},
+	year = 2013,
+	journal = {Phys. Med. Biol.},
+	volume = 58,
+	number = 9,
+	pages = 2861
 }
-
 @inproceedings{wang2019cycles,
-  author = {Wang, Xiaolong and Jabri, Allan and Efros, Alexei A.},
-  title = {Learning Correspondence from the Cycle-Consistency of Time},
-  booktitle = {CVPR},
-  year = {2019}}
-
-@article{hering2021learn2reg,
-  title={{Learn2Reg}: comprehensive multi-task medical image registration challenge, dataset and evaluation in the era of deep learning},
-  author={Hering, Alessa and Hansen, Lasse and Mok, Tony CW and Chung, Albert and Siebert, Hanna and H{\"a}ger, Stephanie and Lange, Annkristin and Kuckertz, Sven and Heldmann, Stefan and Shao, Wei and others},
-  journal={arXiv preprint \texttt{arXiv:2112.04489}},
-  year={2021}
+	title = {Learning correspondence from the cycle-consistency of time},
+	author = {Wang, Xiaolong and Jabri, Allan and Efros, Alexei A},
+	year = 2019,
+	booktitle = {CVPR},
+	pages = {2566--2576}
 }
-
 @inproceedings{greer2021icon,
-  title={{ICON}: Learning Regular Maps Through Inverse Consistency},
-  author={Greer, Hastings and Kwitt, Roland and Vialard, Fran{\c{c}}ois-Xavier and Niethammer, Marc},
-  booktitle={ICCV},
-  year={2021}
+	title = {{ICON}: Learning Regular Maps Through Inverse Consistency},
+	author = {Greer, Hastings and Kwitt, Roland and Vialard, Fran{\c{c}}ois-Xavier and Niethammer, Marc},
+	year = 2021,
+	booktitle = {ICCV}
 }
-
 @article{staal2004ridge,
-  title={Ridge-based vessel segmentation in color images of the retina},
-  author={Staal, Joes and Abr{\`a}moff, Michael D and Niemeijer, Meindert and Viergever, Max A and Van Ginneken, Bram},
-  journal={TMI},
-  volume={23},
-  number={4},
-  pages={501--509},
-  year={2004},
-  publisher={IEEE}
+	title = {Ridge-based vessel segmentation in color images of the retina},
+	author = {Staal, Joes and Abr{\`a}moff, Michael D and Niemeijer, Meindert and Viergever, Max A and Van Ginneken, Bram},
+	year = 2004,
+	journal = {TMI},
+	publisher = {IEEE},
+	volume = 23,
+	number = 4,
+	pages = {501--509}
 }
-
 @article{ashburner2007fast,
-  title={A fast diffeomorphic image registration algorithm},
-  author={Ashburner, John},
-  journal={Neuroimage},
-  volume={38},
-  number={1},
-  pages={95--113},
-  year={2007},
-  publisher={Elsevier}
+	title = {A fast diffeomorphic image registration algorithm},
+	author = {Ashburner, John},
+	year = 2007,
+	journal = {NeuroImage},
+	publisher = {Elsevier},
+	volume = 38,
+	number = 1,
+	pages = {95--113}
 }
-
 @article{christensen19943d,
-  title={{3D} brain mapping using a deformable neuroanatomy},
-  author={Christensen, Gary E and Rabbitt, Richard D and Miller, Michael I},
-  journal={Phys. Med. Biol.},
-  volume={39},
-  number={3},
-  pages={609},
-  year={1994},
+	title = {{3D} brain mapping using a deformable neuroanatomy},
+	author = {Christensen, Gary E and Rabbitt, Richard D and Miller, Michael I},
+	year = 1994,
+	journal = {Phys. Med. Biol.},
+	volume = 39,
+	number = 3,
+	pages = 609
 }
-
 @article{christensen1996deformable,
-  title={Deformable templates using large deformation kinematics},
-  author={Christensen, Gary E and Rabbitt, Richard D and Miller, Michael I},
-  journal={TMI},
-  volume={5},
-  number={10},
-  pages={1435--1447},
-  year={1996},
+	title = {Deformable templates using large deformation kinematics},
+	author = {Christensen, Gary E and Rabbitt, Richard D and Miller, Michael I},
+	year = 1996,
+	journal = {TMI},
+	volume = 5,
+	number = 10,
+	pages = {1435--1447}
 }
-
 @article{wang2022plosl,
-  title={{PLOSL}: Population learning followed by one shot learning pulmonary image registration using tissue volume preserving and vesselness constraints},
-  author={Wang, Di and Pan, Yue and Durumeric, Oguz C and Reinhardt, Joseph M and Hoffman, Eric A and Schroeder, Joyce D and Christensen, Gary E},
-  journal={MedIA},
-  volume={79},
-  pages={102434},
-  year={2022}}
-
+	title = {{PLOSL}: Population learning followed by one shot learning pulmonary image registration using tissue volume preserving and vesselness constraints},
+	author = {Wang, Di and Pan, Yue and Durumeric, Oguz C and Reinhardt, Joseph M and Hoffman, Eric A and Schroeder, Joyce D and Christensen, Gary E},
+	year = 2022,
+	journal = {MedIA},
+	volume = 79,
+	pages = 102434
+}
 @article{beg2005computing,
-  title={Computing large deformation metric mappings via geodesic flows of diffeomorphisms},
-  author={Beg, M Faisal and Miller, Michael I and Trouv{\'e}, Alain and Younes, Laurent},
-  journal={IJCV},
-  volume={61},
-  number={2},
-  pages={139--157},
-  year={2005},
+	title = {Computing large deformation metric mappings via geodesic flows of diffeomorphisms},
+	author = {Beg, M Faisal and Miller, Michael I and Trouv{\'e}, Alain and Younes, Laurent},
+	year = 2005,
+	journal = {IJCV},
+	volume = 61,
+	number = 2,
+	pages = {139--157}
 }
-
 @article{miller2006geodesic,
-  title={Geodesic shooting for computational anatomy},
-  author={Miller, Michael I and Trouv{\'e}, Alain and Younes, Laurent},
-  journal={J. Math. Imaging Vis.},
-  volume={24},
-  number={2},
-  pages={209--228},
-  year={2006},
+	title = {Geodesic shooting for computational anatomy},
+	author = {Miller, Michael I and Trouv{\'e}, Alain and Younes, Laurent},
+	year = 2006,
+	journal = {J. Math. Imaging Vis.},
+	volume = 24,
+	number = 2,
+	pages = {209--228}
 }
-
 @inproceedings{studholme1995multiresolution,
-  title={Multiresolution voxel similarity measures for {MR-PET} registration},
-  author={Studholme, Colin and Hill, Derek LG and Hawkes, David J},
-  booktitle={IPMI},
-  year={1995}}
-
+	title = {Multiresolution voxel similarity measures for {MR-PET} registration},
+	author = {Studholme, Colin and Hill, Derek LG and Hawkes, David J},
+	year = 1995,
+	booktitle = {IPMI}
+}
 @article{maes1999comparative,
-  title={Comparative evaluation of multiresolution optimization strategies for multimodality image registration by maximization of mutual information},
-  author={Maes, Frederik and Vandermeulen, Dirk and Suetens, Paul},
-  journal={MedIA},
-  volume={3},
-  number={4},
-  pages={373--386},
-  year={1999},
+	title = {Comparative evaluation of multiresolution optimization strategies for multimodality image registration by maximization of mutual information},
+	author = {Maes, Frederik and Vandermeulen, Dirk and Suetens, Paul},
+	year = 1999,
+	journal = {MedIA},
+	volume = 3,
+	number = 4,
+	pages = {373--386}
 }
-
 @article{thevenaz2000optimization,
-  title={Optimization of mutual information for multiresolution image registration},
-  author={Th\'evenaz, Philippe and Unser, Michael},
-  journal={TMI},
-  volume={9},
-  number={12},
-  pages={2083--2099},
-  year={2000}
+	title = {Optimization of mutual information for multiresolution image registration},
+	author = {Th\'evenaz, Philippe and Unser, Michael},
+	year = 2000,
+	journal = {TMI},
+	volume = 9,
+	number = 12,
+	pages = {2083--2099}
 }
-
 @article{balakrishnan2019voxelmorph,
-  title={{VoxelMorph}: a learning framework for deformable medical image registration},
-  author={Balakrishnan, Guha and Zhao, Amy and Sabuncu, Mert R and Guttag, John and Dalca, Adrian V},
-  journal={TMI},
-  volume={38},
-  number={8},
-  pages={1788--1800},
-  year={2019},
+	title = {{VoxelMorph}: a learning framework for deformable medical image registration},
+	author = {Balakrishnan, Guha and Zhao, Amy and Sabuncu, Mert R and Guttag, John and Dalca, Adrian V},
+	year = 2019,
+	journal = {TMI},
+	volume = 38,
+	number = 8,
+	pages = {1788--1800}
 }
-
 @article{eppenhof2019progressively,
-  title={Progressively trained convolutional neural networks for deformable image registration},
-  author={Eppenhof, Koen AJ and Lafarge, Maxime W and Veta, Mitko and Pluim, Josien PW},
-  journal={TMI},
-  volume={39},
-  number={5},
-  pages={1594--1604},
-  year={2019},
+	title = {Progressively trained convolutional neural networks for deformable image registration},
+	author = {Eppenhof, Koen AJ and Lafarge, Maxime W and Veta, Mitko and Pluim, Josien PW},
+	year = 2019,
+	journal = {TMI},
+	volume = 39,
+	number = 5,
+	pages = {1594--1604}
 }
-
 @inproceedings{mok2020large,
-  title={Large deformation diffeomorphic image registration with {Laplacian} pyramid networks},
-  author={Mok, Tony CW and Chung, Albert},
-  booktitle={MICCAI},
-  year={2020}}
-  
+	title = {Large deformation diffeomorphic image registration with {Laplacian} pyramid networks},
+	author = {Mok, Tony CW and Chung, Albert},
+	year = 2020,
+	booktitle = {MICCAI}
+}
 @inproceedings{zhao2019recursive,
-  title={Recursive cascaded networks for unsupervised medical image registration},
-  author={Zhao, Shengyu and Dong, Yue and Chang, Eric I and Xu, Yan and others},
-  booktitle={CVPR},
-  year={2019}
+	title = {Recursive cascaded networks for unsupervised medical image registration},
+	author = {Zhao, Shengyu and Dong, Yue and Chang, Eric I and Xu, Yan and others},
+	year = 2019,
+	booktitle = {CVPR}
 }
-
 @inproceedings{hering2019mlvirnet,
-  title={mlvirnet: Multilevel variational image registration network},
-  author={Hering, Alessa and Ginneken, Bram van and Heldmann, Stefan},
-  booktitle={MICCAI},
-  year={2019}
+	title = {mlvirnet: Multilevel variational image registration network},
+	author = {Hering, Alessa and Ginneken, Bram van and Heldmann, Stefan},
+	year = 2019,
+	booktitle = {MICCAI}
 }
-
 @article{jiang2020multi,
-  title={A multi-scale framework with unsupervised joint training of convolutional neural networks for pulmonary deformable image registration},
-  author={Jiang, Zhuoran and Yin, Fang-Fang and Ge, Yun and Ren, Lei},
-  journal={Phys. Med. Biol.},
-  volume={65},
-  number={1},
-  pages={015011},
-  year={2020},
+	title = {A multi-scale framework with unsupervised joint training of convolutional neural networks for pulmonary deformable image registration},
+	author = {Jiang, Zhuoran and Yin, Fang-Fang and Ge, Yun and Ren, Lei},
+	year = 2020,
+	journal = {Phys. Med. Biol.},
+	volume = 65,
+	number = 1,
+	pages = {015011}
 }
-
 @article{de2019deep,
-  title={A deep learning framework for unsupervised affine and deformable image registration},
-  author={De Vos, Bob D and Berendsen, Floris F and Viergever, Max A and Sokooti, Hessam and Staring, Marius and I{\v{s}}gum, Ivana},
-  journal={MedIA},
-  volume={52},
-  pages={128--143},
-  year={2019},
+	title = {A deep learning framework for unsupervised affine and deformable image registration},
+	author = {De Vos, Bob D and Berendsen, Floris F and Viergever, Max A and Sokooti, Hessam and Staring, Marius and I{\v{s}}gum, Ivana},
+	year = 2019,
+	journal = {MedIA},
+	volume = 52,
+	pages = {128--143}
 }
-
 @inproceedings{shen2019networks,
-  title={Networks for joint affine and non-parametric image registration},
-  author={Shen, Zhengyang and Han, Xu and Xu, Zhenlin and Niethammer, Marc},
-  booktitle={CVPR},
-  year={2019}
+	title = {Networks for joint affine and non-parametric image registration},
+	author = {Shen, Zhengyang and Han, Xu and Xu, Zhenlin and Niethammer, Marc},
+	year = 2019,
+	booktitle = {CVPR}
 }
-
 @article{thirion1998image,
-  title={Image matching as a diffusion process: an analogy with {Maxwell's} demons},
-  author={Thirion, Jean-Philippe},
-  journal={MedIA},
-  volume={2},
-  number={3},
-  pages={243--260},
-  year={1998}
+	title = {Image matching as a diffusion process: an analogy with {Maxwell's} demons},
+	author = {Thirion, Jean-Philippe},
+	year = 1998,
+	journal = {MedIA},
+	volume = 2,
+	number = 3,
+	pages = {243--260}
 }
-
 @article{paszke2019pytorch,
-  title={{Pytorch}: An imperative style, high-performance deep learning library},
-  author={Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and others},
-  journal={NeurIPS},
-  year={2019}
+	title = {{Pytorch}: An imperative style, high-performance deep learning library},
+	author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and others},
+	year = 2019,
+	journal = {NeurIPS}
 }
-
 @inproceedings{chen2018continuous,
-  title={Continuous-time flows for efficient inference and density estimation},
-  author={Chen, Changyou and Li, Chunyuan and Chen, Liqun and Wang, Wenlin and Pu, Yunchen and Duke, Lawrence Carin},
-  booktitle={ICML},
-  year={2018}}
-
+	title = {Continuous-time flows for efficient inference and density estimation},
+	author = {Chen, Changyou and Li, Chunyuan and Chen, Liqun and Wang, Wenlin and Pu, Yunchen and Duke, Lawrence Carin},
+	year = 2018,
+	booktitle = {ICML}
+}
 @inproceedings{dalca2018unsupervised,
-  title={Unsupervised learning for fast probabilistic diffeomorphic registration},
-  author={Dalca, Adrian V and Balakrishnan, Guha and Guttag, John and Sabuncu, Mert R},
-  booktitle={MICCAI},
-  year={2018}}
-
+	title = {Unsupervised learning for fast probabilistic diffeomorphic registration},
+	author = {Dalca, Adrian V and Balakrishnan, Guha and Guttag, John and Sabuncu, Mert R},
+	year = 2018,
+	booktitle = {MICCAI}
+}
 @inproceedings{shen2019region,
-  title={Region-specific diffeomorphic metric mapping},
-  author={Shen, Zhengyang and Vialard, Fran{\c{c}}ois-Xavier and Niethammer, Marc},
-  journal={NeurIPS},
-  year={2019}
+	title = {Region-specific diffeomorphic metric mapping},
+	author = {Shen, Zhengyang and Vialard, Fran{\c{c}}ois-Xavier and Niethammer, Marc},
+	year = 2019,
+	journal = {NeurIPS},
+	booktitle = {NeurIPS}
 }
-
 @article{sotiras2013deformable,
-  title={Deformable medical image registration: A survey},
-  author={Sotiras, Aristeidis and Davatzikos, Christos and Paragios, Nikos},
-  journal={TMI},
-  volume={32},
-  number={7},
-  pages={1153--1190},
-  year={2013}}
-
+	title = {Deformable medical image registration: A survey},
+	author = {Sotiras, Aristeidis and Davatzikos, Christos and Paragios, Nikos},
+	year = 2013,
+	journal = {TMI},
+	volume = 32,
+	number = 7,
+	pages = {1153--1190}
+}
 @article{crum2004non,
-  title={Non-rigid image registration: theory and practice},
-  author={Crum, William R and Hartkens, Thomas and Hill, DLG},
-  journal={Brit. J. Radiol.},
-  volume={77},
-  number={suppl\_2},
-  pages={S140--S153},
-  year={2004},
+	title = {Non-rigid image registration: theory and practice},
+	author = {Crum, William R and Hartkens, Thomas and Hill, DLG},
+	year = 2004,
+	journal = {Brit. J. Radiol.},
+	volume = 77,
+	number = {suppl\_2},
+	pages = {S140--S153}
 }
-
 @inproceedings{jaderberg2015spatial,
-  title={Spatial transformer networks},
-  author={Jaderberg, Max and Simonyan, Karen and Zisserman, Andrew and others},
-  booktitle={NeurIPS},
-  year={2015}
+	title = {Spatial transformer networks},
+	author = {Jaderberg, Max and Simonyan, Karen and Zisserman, Andrew and others},
+	year = 2015,
+	booktitle = {NeurIPS}
 }
-
 @article{vishnevskiy2017isotropic,
-  title={Isotropic total variation regularization of displacements in parametric image registration},
-  author={Vishnevskiy, Valery and Gass, Tobias and Szekely, Gabor and Tanner, Christine and Goksel, Orcun},
-  journal={TMI},
-  volume={36},
-  number={2},
-  pages={385--395},
-  year={2017}}
-
+	title = {Isotropic total variation regularization of displacements in parametric image registration},
+	author = {Vishnevskiy, Valery and Gass, Tobias and Szekely, Gabor and Tanner, Christine and Goksel, Orcun},
+	year = 2017,
+	journal = {TMI},
+	volume = 36,
+	number = 2,
+	pages = {385--395}
+}
 @article{hering2021cnn,
-  title={{CNN}-based lung {CT} registration with multiple anatomical constraints},
-  author={Hering, Alessa and H{\"a}ger, Stephanie and Moltz, Jan and Lessmann, Nikolas and Heldmann, Stefan and van Ginneken, Bram},
-  journal={MedIA},
-  volume={72},
-  pages={102139},
-  year={2021}}
-
+	title = {{CNN}-based lung {CT} registration with multiple anatomical constraints},
+	author = {Hering, Alessa and H{\"a}ger, Stephanie and Moltz, Jan and Lessmann, Nikolas and Heldmann, Stefan and van Ginneken, Bram},
+	year = 2021,
+	journal = {MedIA},
+	volume = 72,
+	pages = 102139
+}
 @article{song2010lung,
-  title={Lung {CT} image registration using diffeomorphic transformation models},
-  author={Song, Gang and Tustison, Nicholas and Avants, Brian and Gee, James C},
-  journal={Medical image analysis for the clinic: a grand challenge},
-  pages={23--32},
-  year={2010},
-  publisher={CreateSpace Independent Publishing Platform}
+	title = {Lung {CT} image registration using diffeomorphic transformation models},
+	author = {Song, Gang and Tustison, Nicholas and Avants, Brian and Gee, James C},
+	year = 2010,
+	journal = {Medical image analysis for the clinic: a grand challenge},
+	publisher = {CreateSpace Independent Publishing Platform},
+	pages = {23--32}
 }
-
 @article{klein2009elastix,
-  title={Elastix: a toolbox for intensity-based medical image registration},
-  author={Klein, Stefan and Staring, Marius and Murphy, Keelin and Viergever, Max A and Pluim, Josien PW},
-  journal={TMI},
-  volume={29},
-  number={1},
-  pages={196--205},
-  year={2009}}
-
+	title = {Elastix: a toolbox for intensity-based medical image registration},
+	author = {Klein, Stefan and Staring, Marius and Murphy, Keelin and Viergever, Max A and Pluim, Josien PW},
+	year = 2009,
+	journal = {TMI},
+	volume = 29,
+	number = 1,
+	pages = {196--205}
+}
 @article{modat2010fast,
-  title={Fast free-form deformation using graphics processing units},
-  author={Modat, Marc and Ridgway, Gerard R and Taylor, Zeike A and Lehmann, Manja and Barnes, Josephine and Hawkes, David J and Fox, Nick C and Ourselin, S{\'e}bastien},
-  journal={Comput. Methods Programs Biomed.},
-  volume={98},
-  number={3},
-  pages={278--284},
-  year={2010}}
-
+	title = {Fast free-form deformation using graphics processing units},
+	author = {Modat, Marc and Ridgway, Gerard R and Taylor, Zeike A and Lehmann, Manja and Barnes, Josephine and Hawkes, David J and Fox, Nick C and Ourselin, S{\'e}bastien},
+	year = 2010,
+	journal = {Comput. Methods Programs Biomed.},
+	volume = 98,
+	number = 3,
+	pages = {278--284}
+}
 @article{he2021recursive,
-  title={Recursive Refinement Network for Deformable Lung Registration between Exhale and Inhale {CT} Scans},
-  author={He, Xinzi and Guo, Jia and Zhang, Xuzhe and Bi, Hanwen and Gerard, Sarah and Kaczka, David and Motahari, Amin and Hoffman, Eric and Reinhardt, Joseph and Barr, R Graham and Angelini, Elsa and Laine, Andrew},
-  journal={arXiv preprint \texttt{arXiv:2106.07608}},
-  year={2021}
+	title = {Recursive Refinement Network for Deformable Lung Registration between Exhale and Inhale {CT} Scans},
+	author = {He, Xinzi and Guo, Jia and Zhang, Xuzhe and Bi, Hanwen and Gerard, Sarah and Kaczka, David and Motahari, Amin and Hoffman, Eric and Reinhardt, Joseph and Barr, R Graham and Angelini, Elsa and Laine, Andrew},
+	year = 2021,
+	journal = {arXiv preprint arXiv:2106.07608}
 }
-
 @article{rushmore2022anatomically,
-  title={Anatomically curated segmentation of human subcortical structures in high resolution magnetic resonance imaging: An open science approach},
-  author={Rushmore, R. Jarrett and
-                  Sutherland, Kyle and
-                  Carrington, Holly and
-                  Chen, Justine and
-                  Halle, Michael and
-                  Lasso, Andras and
-                  Papadimitriou, George and
-                  Prunier, Nick and
-                  Rizzoni, Elizabeth and
-                  Vessey, Brynn and
-                  Wilson-Braun, Peter and
-                  Rathi, Yogesh and
-                  Kubicki, Marek and
-                  Bouix, Sylvain and
-                  Yeterian, Edward and
-                  Makris, Nikos},
-  journal={Front. Neuroanat.},
-  volume={16},
-  year={2022}}
-
+	title = {Anatomically curated segmentation of human subcortical structures in high resolution magnetic resonance imaging: An open science approach},
+	author = {Rushmore, R. Jarrett and Sutherland, Kyle and Carrington, Holly and Chen, Justine and Halle, Michael and Lasso, Andras and Papadimitriou, George and Prunier, Nick and Rizzoni, Elizabeth and Vessey, Brynn and Wilson-Braun, Peter and Rathi, Yogesh and Kubicki, Marek and Bouix, Sylvain and Yeterian, Edward and Makris, Nikos},
+	year = 2022,
+	journal = {Front. Neuroanat.},
+	volume = 16
+}
 @article{rushmore_r_jarrett_2022_dataset,
-  author       = {Rushmore, R. Jarrett and
-                  Sutherland, Kyle and
-                  Carrington, Holly and
-                  Chen, Justine and
-                  Halle, Michael and
-                  Lasso, Andras and
-                  Papadimitriou, George and
-                  Prunier, Nick and
-                  Rizzoni, Elizabeth and
-                  Vessey, Brynn and
-                  Wilson-Braun, Peter and
-                  Rathi, Yogesh and
-                  Kubicki, Marek and
-                  Bouix, Sylvain and
-                  Yeterian, Edward and
-                  Makris, Nikos},
-  title        = {{HOA-2/SubcorticalParcellations: 
-                   release-50-subjects-1.1.0}},
-  month        = sep,
-  year         = 2022,
-  publisher    = {Zenodo},
-  version      = {v1.1.0},
-  doi          = {10.5281/zenodo.7080547},
-  url          = {https://doi.org/10.5281/zenodo.7080547}
+	title = {{HOA-2/SubcorticalParcellations: release-50-subjects-1.1.0}},
+	author = {Rushmore, R. Jarrett and Sutherland, Kyle and Carrington, Holly and Chen, Justine and Halle, Michael and Lasso, Andras and Papadimitriou, George and Prunier, Nick and Rizzoni, Elizabeth and Vessey, Brynn and Wilson-Braun, Peter and Rathi, Yogesh and Kubicki, Marek and Bouix, Sylvain and Yeterian, Edward and Makris, Nikos},
+	year = 2022,
+	month = {sep},
+	publisher = {Zenodo},
+	version = {v1.1.0},
+	doi = {10.5281/zenodo.7080547},
+	url = {https://doi.org/10.5281/zenodo.7080547}
 }
-
 @article{reuter2010highly,
-  title={Highly accurate inverse consistent registration: a robust approach},
-  author={Reuter, Martin and Rosas, H Diana and Fischl, Bruce},
-  journal={Neuroimage},
-  volume={53},
-  number={4},
-  pages={1181--1196},
-  year={2010},
-  publisher={Elsevier}
+	title = {Highly accurate inverse consistent registration: a robust approach},
+	author = {Reuter, Martin and Rosas, H Diana and Fischl, Bruce},
+	year = 2010,
+	journal = {NeuroImage},
+	publisher = {Elsevier},
+	volume = 53,
+	number = 4,
+	pages = {1181--1196}
 }
-
 @article{fischer2008ill,
-  title={Ill-posed medicine—an introduction to image registration},
-  author={Fischer, Bernd and Modersitzki, Jan},
-  journal={Inverse problems},
-  volume={24},
-  number={3},
-  pages={034008},
-  year={2008},
-  publisher={IOP Publishing}
+	title = {Ill-posed medicine—an introduction to image registration},
+	author = {Fischer, Bernd and Modersitzki, Jan},
+	year = 2008,
+	journal = {Inverse problems},
+	publisher = {IOP Publishing},
+	volume = 24,
+	number = 3,
+	pages = {034008}
 }
-
 @inproceedings{yin2018geonet,
-  title={{GeoNet}: Unsupervised learning of dense depth, optical flow and camera pose},
-  author={Yin, Zhichao and Shi, Jianping},
-  booktitle={CVPR},
-  year={2018}
+	title = {{GeoNet}: Unsupervised learning of dense depth, optical flow and camera pose},
+	author = {Yin, Zhichao and Shi, Jianping},
+	year = 2018,
+	booktitle = {CVPR}
 }
-
 @inproceedings{godard2017unsupervised,
-  title={Unsupervised monocular depth estimation with left-right consistency},
-  author={Godard, Cl{\'e}ment and Mac Aodha, Oisin and Brostow, Gabriel J},
-  booktitle={CVPR},
-  year={2017}
+	title = {Unsupervised monocular depth estimation with left-right consistency},
+	author = {Godard, Cl{\'e}ment and Mac Aodha, Oisin and Brostow, Gabriel J},
+	year = 2017,
+	booktitle = {CVPR}
 }
-
-
 @article{vercauteren2009diffeomorphic,
-  title={Diffeomorphic demons: Efficient non-parametric image registration},
-  author={Vercauteren, Tom and Pennec, Xavier and Perchant, Aymeric and Ayache, Nicholas},
-  journal={NeuroImage},
-  volume={45},
-  number={1},
-  pages={61--72},
-  year={2009},
+	title = {Diffeomorphic demons: Efficient non-parametric image registration},
+	author = {Vercauteren, Tom and Pennec, Xavier and Perchant, Aymeric and Ayache, Nicholas},
+	year = 2009,
+	journal = {NeuroImage},
+	volume = 45,
+	number = 1,
+	pages = {61--72}
 }
-
 @article{hoffmann2022synthmorph,
-  title={SynthMorph: learning contrast-invariant registration without acquired images},
-  author={Hoffmann, Malte and Billot, Benjamin and Greve, Douglas N and Iglesias, Juan Eugenio and Fischl, Bruce and Dalca, Adrian V},
-  journal={TMI},
-  volume={41},
-  number={3},
-  pages={543--558},
-  year={2022},
+	title = {SynthMorph: learning contrast-invariant registration without acquired images},
+	author = {Hoffmann, Malte and Billot, Benjamin and Greve, Douglas N and Iglesias, Juan Eugenio and Fischl, Bruce and Dalca, Adrian V},
+	year = 2022,
+	journal = {TMI},
+	volume = 41,
+	number = 3,
+	pages = {543--558}
 }
-
 @article{tian2022,
-  title={GradICON: Approximate Diffeomorphisms via Gradient Inverse Consistency},
-  author={Lin Tian and Hastings Greer and Franccois-Xavier Vialard and Roland Kwitt and Ra{\'u}l San Jos{\'e} Est{\'e}par and Marc Niethammer},
-  journal={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2022},
-  pages={18084-18094},
-  url={https://api.semanticscholar.org/CorpusID:249626296}
+	title = {{GradICON}: Approximate Diffeomorphisms via Gradient Inverse Consistency},
+	author = {Lin Tian and Hastings Greer and Franccois-Xavier Vialard and Roland Kwitt and Ra{\'u}l San Jos{\'e} Est{\'e}par and Marc Niethammer},
+	year = 2022,
+	journal = {CVPR},
+	pages = {18084--18094},
+	url = {https://api.semanticscholar.org/CorpusID:249626296}
 }
-
 @article{Honkamaa2022DeformationEC,
-  title={Deformation equivariant cross-modality image synthesis with paired non-aligned training data},
-  author={Joel Honkamaa and Muhammad Umair Ahmed Khan and Sonja Koivukoski and Leena Latonen and Pekka Ruusuvuori and Pekka Marttinen},
-  journal={MedIA},
-  year={2022},
-  volume={90},
-  pages={
-          102940
-        },
-  url={https://api.semanticscholar.org/CorpusID:251881290}
+	title = {Deformation equivariant cross-modality image synthesis with paired non-aligned training data},
+	author = {Joel Honkamaa and Muhammad Umair Ahmed Khan and Sonja Koivukoski and Leena Latonen and Pekka Ruusuvuori and Pekka Marttinen},
+	year = 2022,
+	journal = {MedIA},
+	volume = 90,
+	pages = {102940},
+	url = {https://api.semanticscholar.org/CorpusID:251881290}
 }
-
-@unknown{iglesiasEasyreg,
-author = {Iglesias, Juan},
-year = {2023},
-month = {01},
-pages = {},
-title = {EasyReg: A ready-to-use deep learning tool for symmetric affine and nonlinear brain MRI registration},
-doi = {10.21203/rs.3.rs-2444602/v1}
+@article{iglesias2023ready,
+	title = {A ready-to-use machine learning tool for symmetric multi-modality registration of brain MRI},
+	author = {Iglesias, Juan Eugenio},
+	year = 2023,
+	journal = {Scientific Reports},
+	publisher = {Nature Publishing Group UK London},
+	volume = 13,
+	number = 1,
+	pages = 6657
 }
-
 @article{Nordling2023ContrastiveLO,
-  title={Contrastive Learning of Equivariant Image Representations for Multimodal Deformable Registration},
-  author={Love Nordling and Johan {\"O}fverstedt and Joakim Lindblad and Natasa Sladoje},
-  journal={2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI)},
-  year={2023},
-  pages={1-5},
-  url={https://api.semanticscholar.org/CorpusID:261435336}
+	title = {Contrastive Learning of Equivariant Image Representations for Multimodal Deformable Registration},
+	author = {Love Nordling and Johan {\"O}fverstedt and Joakim Lindblad and Natasa Sladoje},
+	year = 2023,
+	journal = {ISBI},
+	pages = {1--5},
+	url = {https://api.semanticscholar.org/CorpusID:261435336}
 }
-
-@InProceedings{SURF,
-author="Bay, Herbert
-and Tuytelaars, Tinne
-and Van Gool, Luc",
-editor="Leonardis, Ale{\v{s}}
-and Bischof, Horst
-and Pinz, Axel",
-title="{SURF}: Speeded Up Robust Features",
-booktitle="ECCV",
-year="2006"}
-
+@inproceedings{SURF,
+	title = {{SURF}: Speeded Up Robust Features},
+	author = {Bay, Herbert and Tuytelaars, Tinne and Van Gool, Luc},
+	year = 2006,
+	booktitle = {ECCV},
+	editor = {Leonardis, Ale{\v{s}} and Bischof, Horst and Pinz, Axel}
+}
 @article{Wang2023ARA,
-  title={A robust and interpretable deep learning framework for multi-modal registration via keypoints},
-  author={Alan Q. Wang and Evan M. Yu and Adrian V. Dalca and Mert Rory Sabuncu},
-  journal={MedIA},
-  year={2023},
-  volume={90},
-  pages={
-          102962
-        },
-  url={https://api.semanticscholar.org/CorpusID:258236429}
+	title = {A robust and interpretable deep learning framework for multi-modal registration via keypoints},
+	author = {Alan Q. Wang and Evan M. Yu and Adrian V. Dalca and Mert Rory Sabuncu},
+	year = 2023,
+	journal = {MedIA},
+	volume = 90,
+	pages = 102962,
+	url = {https://api.semanticscholar.org/CorpusID:258236429}
 }
-
-@inproceedings{
-billot2023equivariant,
-title={Equivariant and Denoising {CNN}s to Decouple Intensity and Spatial Features for Motion Tracking in Fetal Brain {MRI}},
-author={Benjamin Billot and Daniel Moyer and Neerav Karani and Malte Hoffmann and Esra Abaci Turk and Ellen Grant and Polina Golland},
-booktitle={Medical Imaging with Deep Learning, short paper track},
-year={2023},
-url={https://openreview.net/forum?id=C7VKeiHeZT}
+@inproceedings{billot2023equivariant,
+	title = {Equivariant and Denoising {CNN}s to Decouple Intensity and Spatial Features for Motion Tracking in Fetal Brain {MRI}},
+	author = {Benjamin Billot and Daniel Moyer and Neerav Karani and Malte Hoffmann and Esra Abaci Turk and Ellen Grant and Polina Golland},
+	year = 2023,
+	booktitle = {MIDL},
+	url = {https://openreview.net/forum?id=C7VKeiHeZT}
 }
-
-@article{Greer2023InverseCB,
-  title={Inverse Consistency by Construction for Multistep Deep Registration},
-  author={Hastings Greer and Lin Tian and François-Xavier Vialard and Roland Kwitt and Sylvain Bouix and Ra{\'u}l San Jos{\'e} Est{\'e}par and Richard J. Rushmore and Marc Niethammer},
-  journal={ArXiv},
-  year={2023},
-  volume={abs/2305.00087},
-  url={https://api.semanticscholar.org/CorpusID:258426220}
+@inproceedings{greer2023inverse,
+	title = {Inverse consistency by construction for multistep deep registration},
+	author = {Greer, Hastings and Tian, Lin and Vialard, Francois-Xavier and Kwitt, Roland and Bouix, Sylvain and San Jose Estepar, Raul and Rushmore, Richard and Niethammer, Marc},
+	year = 2023,
+	booktitle = {MICCAI},
+	pages = {688--698},
+	organization = {Springer}
 }
-
-@unknown{asymreg,
-author = {Honkamaa, Joel and Marttinen, Pekka},
-year = {2023},
-month = {03},
-pages = {},
-title = {ASymReg: Robust symmetric image registration using anti-symmetric formulation and deformation inversion layers}
+@article{asymreg,
+	title = {ASymReg: Robust symmetric image registration using anti-symmetric formulation and deformation inversion layers},
+	author = {Honkamaa, Joel and Marttinen, Pekka},
+	year = 2023,
+	journal = {arXiv preprint arXiv:2303.10211},
+	month = {03},
+	pages = {}
 }
-
-@misc{zhang2018inverseconsistent,
-      title={Inverse-Consistent Deep Networks for Unsupervised Deformable Image Registration}, 
-      author={Jun Zhang},
-      year={2018},
-      eprint={1809.03443},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{zhang2018inverse,
+	title = {Inverse-consistent deep networks for unsupervised deformable image registration},
+	author = {Zhang, Jun},
+	year = 2018,
+	journal = {arXiv preprint arXiv:1809.03443}
 }
-
 @article{fukushimaneocognitronbc,
-  added-at = {2008-03-11T14:52:34.000+0100},
-  author = {Fukushima, Kunihiko},
-  biburl = {https://www.bibsonomy.org/bibtex/29ecd878c4827c46dab6b9622cfa00072/idsia},
-  citeulike-article-id = {2376719},
-  interhash = {303975e6400e477e91c91e7dc2c47544},
-  intrahash = {9ecd878c4827c46dab6b9622cfa00072},
-  journal = {Biological Cybernetics},
-  keywords = {nn},
-  pages = {193--202},
-  priority = {2},
-  timestamp = {2008-03-11T15:04:22.000+0100},
-  title = {{N}eocognitron: {A} Self-Organizing Neural Network Model for a Mechanism of Pattern Recognition Unaffected by Shift in Position},
-  volume = 36,
-  year = 1980
+	title = {{N}eocognitron: {A} Self-Organizing Neural Network Model for a Mechanism of Pattern Recognition Unaffected by Shift in Position},
+	author = {Fukushima, Kunihiko},
+	year = 1980,
+	journal = {Biological Cybernetics},
+	volume = 36,
+	pages = {193--202},
+	added-at = {2008-03-11T14:52:34.000+0100},
+	citeulike-article-id = 2376719,
+	interhash = {303975e6400e477e91c91e7dc2c47544},
+	intrahash = {9ecd878c4827c46dab6b9622cfa00072},
+	keywords = {nn},
+	priority = 2,
+	timestamp = {2008-03-11T15:04:22.000+0100},
+	biburl = {https://www.bibsonomy.org/bibtex/29ecd878c4827c46dab6b9622cfa00072/idsia}
 }
 @inproceedings{parikh-etal-2016-decomposable,
-    title = "A Decomposable Attention Model for Natural Language Inference",
-    author = {Parikh, Ankur  and
-      T{\"a}ckstr{\"o}m, Oscar  and
-      Das, Dipanjan  and
-      Uszkoreit, Jakob},
-    editor = "Su, Jian  and
-      Duh, Kevin  and
-      Carreras, Xavier",
-    booktitle = "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
-    month = nov,
-    year = "2016",
-    address = "Austin, Texas",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/D16-1244",
-    doi = "10.18653/v1/D16-1244",
-    pages = "2249--2255",
+	title = {A Decomposable Attention Model for Natural Language Inference},
+	author = {Parikh, Ankur  and T{\"a}ckstr{\"o}m, Oscar  and Das, Dipanjan  and Uszkoreit, Jakob},
+	year = 2016,
+	month = nov,
+	booktitle = {EMNLP},
+	pages = {2249--2255},
+	editor = {Su, Jian  and Duh, Kevin  and Carreras, Xavier},
+	publisher = {Association for Computational Linguistics},
+	address = {Austin, Texas},
+	doi = {10.18653/v1/D16-1244},
+	url = {https://aclanthology.org/D16-1244}
 }
-
 @article{Tian2023SAMEAS,
-  title={SAME++: A Self-supervised Anatomical eMbeddings Enhanced medical image registration framework using stable sampling and regularized transformation},
-  author={Lin Tian and Zi Li and Fengze Liu and Xiaoyu Bai and Jia Ge and Le Lu and Marc Niethammer and Xianghua Ye and Ke Yan and Dakai Jin},
-  journal={ArXiv},
-  year={2023},
-  volume={abs/2311.14986},
-  url={https://api.semanticscholar.org/CorpusID:265458245}
+	title = {{SAME++}: A Self-supervised Anatomical eMbeddings Enhanced medical image registration framework using stable sampling and regularized transformation},
+	author = {Tian, Lin and Li, Zi and Liu, Fengze and Bai, Xiaoyu and Ge, Jia and Lu, Le and Niethammer, Marc and Ye, Xianghua and Yan, Ke and Jin, Daikai},
+	year = 2023,
+	journal = {arXiv preprint arXiv:2311.14986},
+	volume = {abs/2311.14986},
+	url = {https://api.semanticscholar.org/CorpusID:265458245}
 }
-
-@ARTICLE{Abdomen1K9497733,
-  author={Ma, Jun and Zhang, Yao and Gu, Song and Zhu, Cheng and Ge, Cheng and Zhang, Yichi and An, Xingle and Wang, Congcong and Wang, Qiyuan and Liu, Xin and Cao, Shucheng and Zhang, Qi and Liu, Shangqing and Wang, Yunpeng and Li, Yuhui and He, Jian and Yang, Xiaoping},
-  journal={TPAMI}, 
-  title={AbdomenCT-1K: Is Abdominal Organ Segmentation a Solved Problem?}, 
-  year={2022},
-  volume={44},
-  number={10},
-  pages={6695-6714},
-  keywords={Benchmark testing;Liver;Image segmentation;Biological systems;Pancreas;Computed tomography;Kidney;Multi-organ segmentation;generalization;semi-supervised learning;weakly supervised learning;continual learning},
-  doi={10.1109/TPAMI.2021.3100536}}
-
+@article{Abdomen1K9497733,
+	title = {AbdomenCT-1K: Is Abdominal Organ Segmentation a Solved Problem?},
+	author = {Ma, Jun and Zhang, Yao and Gu, Song and Zhu, Cheng and Ge, Cheng and Zhang, Yichi and An, Xingle and Wang, Congcong and Wang, Qiyuan and Liu, Xin and Cao, Shucheng and Zhang, Qi and Liu, Shangqing and Wang, Yunpeng and Li, Yuhui and He, Jian and Yang, Xiaoping},
+	year = 2022,
+	journal = {TPAMI},
+	volume = 44,
+	number = 10,
+	pages = {6695--6714},
+	keywords = {Benchmark testing;Liver;Image segmentation;Biological systems;Pancreas;Computed tomography;Kidney;Multi-organ segmentation;generalization;semi-supervised learning;weakly supervised learning;continual learning},
+	doi = {10.1109/TPAMI.2021.3100536}
+}
 @article{billot_synthseg_2023,
-	title = {SynthSeg: {Segmentation} of brain {MRI} scans of any contrast and resolution without retraining},
+	title = {{SynthSeg}: {Segmentation} of brain {MRI} scans of any contrast and resolution without retraining},
 	author = {Billot, Benjamin and Greve, Douglas N. and Puonti, Oula and Thielscher, Axel and Van Leemput, Koen and Fischl, Bruce and Dalca, Adrian V. and Iglesias, Juan Eugenio},
-	journal = {{Medical} {Image} {Analysis}},
-	year = {2023},
-    volume = {86},
-	pages = {102789},
-    issn = {1361-8415},
-    doi = {10.1016/j.media.2023.102789},
+	year = 2023,
+	journal = {MedIA},
+	volume = 86,
+	pages = 102789,
+	issn = {1361-8415},
+	doi = {10.1016/j.media.2023.102789}
 }
 @article{dao2022flashattention,
-  title={Flashattention: Fast and memory-efficient exact attention with io-awareness},
-  author={Dao, Tri and Fu, Dan and Ermon, Stefano and Rudra, Atri and R{\'e}, Christopher},
-  journal={NeurIPS},
-  year={2022}
+	title = {Flashattention: Fast and memory-efficient exact attention with io-awareness},
+	author = {Dao, Tri and Fu, Dan and Ermon, Stefano and Rudra, Atri and R{\'e}, Christopher},
+	year = 2022,
+	journal = {NeurIPS}
 }
-
-@InProceedings{moyerspheres,
-author="Moyer, Daniel
-and Abaci Turk, Esra
-and Grant, P. Ellen
-and Wells, William M.
-and Golland, Polina",
-editor="de Bruijne, Marleen
-and Cattin, Philippe C.
-and Cotin, St{\'e}phane
-and Padoy, Nicolas
-and Speidel, Stefanie
-and Zheng, Yefeng
-and Essert, Caroline",
-title="Equivariant Filters for Efficient Tracking in 3D Imaging",
-booktitle="MICCAI",
-year="2021",}
-
+@inproceedings{moyer2021equivariant,
+	title = {Equivariant filters for efficient tracking in 3d imaging},
+	author = {Moyer, Daniel and Abaci Turk, Esra and Grant, P Ellen and Wells, William M and Golland, Polina},
+	year = 2021,
+	booktitle = {MICCAI},
+	pages = {193--202},
+	organization = {Springer}
+}
 @article{Lowe2004DistinctiveIF,
-  title={Distinctive Image Features from Scale-Invariant Keypoints},
-  author={David G. Lowe},
-  journal={IJCV},
-  year={2004},
-  volume={60},
-  pages={91-110},
-  url={https://api.semanticscholar.org/CorpusID:174065}
+	title = {Distinctive Image Features from Scale-Invariant Keypoints},
+	author = {David G. Lowe},
+	year = 2004,
+	journal = {IJCV},
+	volume = 60,
+	pages = {91--110},
+	url = {https://api.semanticscholar.org/CorpusID:174065}
 }
 @article{KLEESIEK2016460,
-title = {Deep MRI brain extraction: A 3D convolutional neural network for skull stripping},
-journal = {NeuroImage},
-volume = {129},
-pages = {460-469},
-year = {2016},
-issn = {1053-8119},
-doi = {https://doi.org/10.1016/j.neuroimage.2016.01.024},
-url = {https://www.sciencedirect.com/science/article/pii/S1053811916000306},
-author = {Jens Kleesiek and Gregor Urban and Alexander Hubert and Daniel Schwarz and Klaus Maier-Hein and Martin Bendszus and Armin Biller},
-keywords = {MRI, Brain extraction, Brain mask, Skull stripping, Deep learning, Convolutional networks},
-abstract = {Brain extraction from magnetic resonance imaging (MRI) is crucial for many neuroimaging workflows. Current methods demonstrate good results on non-enhanced T1-weighted images, but struggle when confronted with other modalities and pathologically altered tissue. In this paper we present a 3D convolutional deep learning architecture to address these shortcomings. In contrast to existing methods, we are not limited to non-enhanced T1w images. When trained appropriately, our approach handles an arbitrary number of modalities including contrast-enhanced scans. Its applicability to MRI data, comprising four channels: non-enhanced and contrast-enhanced T1w, T2w and FLAIR contrasts, is demonstrated on a challenging clinical data set containing brain tumors (N=53), where our approach significantly outperforms six commonly used tools with a mean Dice score of 95.19. Further, the proposed method at least matches state-of-the-art performance as demonstrated on three publicly available data sets: IBSR, LPBA40 and OASIS, totaling N=135 volumes. For the IBSR (96.32) and LPBA40 (96.96) data set the convolutional neuronal network (CNN) obtains the highest average Dice scores, albeit not being significantly different from the second best performing method. For the OASIS data the second best Dice (95.02) results are achieved, with no statistical difference in comparison to the best performing tool. For all data sets the highest average specificity measures are evaluated, whereas the sensitivity displays about average results. Adjusting the cut-off threshold for generating the binary masks from the CNN's probability output can be used to increase the sensitivity of the method. Of course, this comes at the cost of a decreased specificity and has to be decided application specific. Using an optimized GPU implementation predictions can be achieved in less than one minute. The proposed method may prove useful for large-scale studies and clinical trials.}
+	title = {Deep MRI brain extraction: A 3D convolutional neural network for skull stripping},
+	author = {Jens Kleesiek and Gregor Urban and Alexander Hubert and Daniel Schwarz and Klaus Maier-Hein and Martin Bendszus and Armin Biller},
+	year = 2016,
+	journal = {NeuroImage},
+	volume = 129,
+	pages = {460--469},
+	issn = {1053-8119},
+	keywords = {MRI, Brain extraction, Brain mask, Skull stripping, Deep learning, Convolutional networks},
+	doi = {https://doi.org/10.1016/j.neuroimage.2016.01.024},
+	url = {https://www.sciencedirect.com/science/article/pii/S1053811916000306},
+	abstract = {Brain extraction from magnetic resonance imaging (MRI) is crucial for many neuroimaging workflows. Current methods demonstrate good results on non-enhanced T1-weighted images, but struggle when confronted with other modalities and pathologically altered tissue. In this paper we present a 3D convolutional deep learning architecture to address these shortcomings. In contrast to existing methods, we are not limited to non-enhanced T1w images. When trained appropriately, our approach handles an arbitrary number of modalities including contrast-enhanced scans. Its applicability to MRI data, comprising four channels: non-enhanced and contrast-enhanced T1w, T2w and FLAIR contrasts, is demonstrated on a challenging clinical data set containing brain tumors (N=53), where our approach significantly outperforms six commonly used tools with a mean Dice score of 95.19. Further, the proposed method at least matches state-of-the-art performance as demonstrated on three publicly available data sets: IBSR, LPBA40 and OASIS, totaling N=135 volumes. For the IBSR (96.32) and LPBA40 (96.96) data set the convolutional neuronal network (CNN) obtains the highest average Dice scores, albeit not being significantly different from the second best performing method. For the OASIS data the second best Dice (95.02) results are achieved, with no statistical difference in comparison to the best performing tool. For all data sets the highest average specificity measures are evaluated, whereas the sensitivity displays about average results. Adjusting the cut-off threshold for generating the binary masks from the CNN's probability output can be used to increase the sensitivity of the method. Of course, this comes at the cost of a decreased specificity and has to be decided application specific. Using an optimized GPU implementation predictions can be achieved in less than one minute. The proposed method may prove useful for large-scale studies and clinical trials.}
 }
-
 @article{billot_robust_2023,
 	title = {{Robust} machine learning segmentation for large-scale analysis of heterogeneous clinical brain {MRI} datasets},
 	author = {Billot, Benjamin and Colin, Magdamo Cheng, You and Das, Sudeshna and Iglesias, Juan Eugenio},
+	year = 2023,
 	journal = {{Proceedings} of the {National} {Academy} of {Sciences} ({PNAS})},
-	year = {2023},
-	volume = {120},
-	number = {9},
+	volume = 120,
+	number = 9,
 	pages = {1--10},
-    doi = {10.1073/pnas.2216399120},
+	doi = {10.1073/pnas.2216399120}
 }
-
-@ARTICLE{cyclemorph,
-       author = {{Kim}, Boah and {Kim}, Dong Hwan and {Park}, Seong Ho and {Kim}, Jieun and {Lee}, June-Goo and {Ye}, Jong Chul},
-        title = "{CycleMorph: Cycle Consistent Unsupervised Deformable Image Registration}",
-      journal = {arXiv e-prints},
-     keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning, Electrical Engineering and Systems Science - Image and Video Processing, Statistics - Machine Learning},
-         year = 2020,
-        month = aug,
-          eid = {arXiv:2008.05772},
-        pages = {arXiv:2008.05772},
-          doi = {10.48550/arXiv.2008.05772},
-archivePrefix = {arXiv},
-       eprint = {2008.05772},
- primaryClass = {cs.CV},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2020arXiv200805772K},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+@inproceedings{melanomaRacial,
+	title = {Mitigating Racial Biases for Machine Learning Based Skin Cancer Detection},
+	author = {Abhari, Julian and Ashok, Ashwin},
+	year = 2023,
+	booktitle = {Proceedings of the Twenty-Fourth International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing},
+	location = {Washington, DC, USA},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	series = {MobiHoc '23},
+	pages = {556–561},
+	isbn = 9781450399265,
+	numpages = 6,
+	keywords = {skin cancer, machine learning, domain adaptation, racial, skin tones, artificial intelligence, bias, computer vision, app, generative adversarial networks}
+}
+@article{hering2022learn2reg,
+	title = {Learn2Reg: comprehensive multi-task medical image registration challenge, dataset and evaluation in the era of deep learning},
+	author = {Hering, Alessa and Hansen, Lasse and Mok, Tony CW and Chung, Albert CS and Siebert, Hanna and H{\"a}ger, Stephanie and Lange, Annkristin and Kuckertz, Sven and Heldmann, Stefan and Shao, Wei and others},
+	year = 2022,
+	journal = {TMI},
+	publisher = {IEEE},
+	volume = 42,
+	number = 3,
+	pages = {697--712}
+}
+@article{roleofreg,
+	title = {The role of image registration in brain mapping},
+	author = {Toga, Arthur W and Thompson, Paul M},
+	year = 2001,
+	journal = {Image and vision computing},
+	publisher = {Elsevier},
+	volume = 19,
+	number = {1-2},
+	pages = {3--24}
+}
+@article{tian2024unigradicon,
+	title = {{uniGradICON}: A Foundation Model for Medical Image Registration},
+	author = {Tian, Lin and Greer, Hastings and Kwitt, Roland and Vialard, Francois-Xavier and Estepar, Raul San Jose and Bouix, Sylvain and Rushmore, Richard and Niethammer, Marc},
+	year = 2024,
+	journal = {arXiv preprint arXiv:2403.05780}
+}
+@inproceedings{siebert2021fast,
+	title = {Fast 3D registration with accurate optimisation and little learning for Learn2Reg 2021},
+	author = {Siebert, Hanna and Hansen, Lasse and Heinrich, Mattias P},
+	year = 2021,
+	booktitle = {MICCAI},
+	pages = {174--179},
+	organization = {Springer}
+}
+@inproceedings{estienne2021deep,
+	title = {Deep learning based registration using spatial gradients and noisy segmentation labels},
+	author = {Estienne, Th{\'e}o and Vakalopoulou, Maria and Battistella, Enzo and Carr{\'e}, Alexandre and Henry, Th{\'e}ophraste and Lerousseau, Marvin and Robert, Charlotte and Paragios, Nikos and Deutsch, Eric},
+	year = 2021,
+	booktitle = {Segmentation, Classification, and Registration of Multi-modality Medical Imaging Data: MICCAI 2020 Challenges},
+	pages = {87--93},
+	organization = {Springer}
+}
+@inproceedings{heinrich2015estimating,
+	title = {Estimating large lung motion in COPD patients by symmetric regularised correspondence fields},
+	author = {Heinrich, Mattias P and Handels, Heinz and Simpson, Ivor JA},
+	year = 2015,
+	booktitle = {MICCAI},
+	pages = {338--345},
+	organization = {Springer}
+}
+@inproceedings{heinrich2019closing,
+	title = {Closing the gap between deep and conventional image registration using probabilistic dense displacement networks},
+	author = {Heinrich, Mattias P},
+	year = 2019,
+	booktitle = {MICCAI},
+	pages = {50--58},
+	organization = {Springer}
+}
+@inproceedings{gunnarsson2020learning,
+	title = {Learning a deformable registration pyramid},
+	author = {Gunnarsson, Niklas and Sj{\"o}lund, Jens and Sch{\"o}n, Thomas B},
+	year = 2020,
+	booktitle = {MICCAI},
+	pages = {80--86},
+	organization = {Springer}
+}
+@inproceedings{Karras2021,
+	title = {Alias-Free Generative Adversarial Networks},
+	author = {Tero Karras and Miika Aittala and Samuli Laine and Erik H\"ark\"onen and Janne Hellsten and Jaakko Lehtinen and Timo Aila},
+	year = 2021,
+	booktitle = {NeurIPS}
+}
+@article{iglesias2023easyreg,
+	title = {{EasyReg}: A ready-to-use deep learning tool for symmetric affine and nonlinear brain {MRI} registration},
+	author = {Iglesias, Juan Eugenio},
+	year = 2023
+}
+@inproceedings{Mok_2020_CVPR,
+	title = {Fast Symmetric Diffeomorphic Image Registration with Convolutional Neural Networks},
+	author = {Mok, Tony C.W. and Chung, Albert C.S.},
+	year = 2020,
+	month = {June},
+	booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
+}
+@article{hering2021learn2reg,
+	title = {{Learn2Reg}: comprehensive multi-task medical image registration challenge, dataset and evaluation in the era of deep learning},
+	author = {Hering, Alessa and Hansen, Lasse and Mok, Tony CW and Chung, Albert and Siebert, Hanna and H{\"a}ger, Stephanie and Lange, Annkristin and Kuckertz, Sven and Heldmann, Stefan and Shao, Wei and others},
+	year = 2021,
+	journal = {arXiv preprint \texttt{arXiv:2112.04489}}
+}
+@unknown{iglesiasEasyreg,
+	title = {EasyReg: A ready-to-use deep learning tool for symmetric affine and nonlinear brain MRI registration},
+	author = {Iglesias, Juan},
+	year = 2023,
+	month = {01},
+	pages = {},
+	doi = {10.21203/rs.3.rs-2444602/v1}
+}
+@article{Greer2023InverseCB,
+	title = {Inverse Consistency by Construction for Multistep Deep Registration},
+	author = {Hastings Greer and Lin Tian and François-Xavier Vialard and Roland Kwitt and Sylvain Bouix and Ra{\'u}l San Jos{\'e} Est{\'e}par and Richard J. Rushmore and Marc Niethammer},
+	year = 2023,
+	journal = {ArXiv},
+	volume = {abs/2305.00087},
+	url = {https://api.semanticscholar.org/CorpusID:258426220}
+}
+@misc{zhang2018inverseconsistent,
+	title = {Inverse-Consistent Deep Networks for Unsupervised Deformable Image Registration},
+	author = {Jun Zhang},
+	year = 2018,
+	eprint = {1809.03443},
+	archiveprefix = {arXiv},
+	primaryclass = {cs.CV}
+}
+@inproceedings{moyerspheres,
+	title = {Equivariant Filters for Efficient Tracking in 3D Imaging},
+	author = {Moyer, Daniel and Abaci Turk, Esra and Grant, P. Ellen and Wells, William M. and Golland, Polina},
+	year = 2021,
+	booktitle = {MICCAI},
+	editor = {de Bruijne, Marleen and Cattin, Philippe C. and Cotin, St{\'e}phane and Padoy, Nicolas and Speidel, Stefanie and Zheng, Yefeng and Essert, Caroline}
+}
+@article{cyclemorph,
+	title = {{CycleMorph: Cycle Consistent Unsupervised Deformable Image Registration}},
+	author = {{Kim}, Boah and {Kim}, Dong Hwan and {Park}, Seong Ho and {Kim}, Jieun and {Lee}, June-Goo and {Ye}, Jong Chul},
+	year = 2020,
+	month = aug,
+	journal = {arXiv e-prints},
+	pages = {arXiv:2008.05772},
+	doi = {10.48550/arXiv.2008.05772},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning, Electrical Engineering and Systems Science - Image and Video Processing, Statistics - Machine Learning},
+	eid = {arXiv:2008.05772},
+	archiveprefix = {arXiv},
+	eprint = {2008.05772},
+	primaryclass = {cs.CV},
+	adsurl = {https://ui.adsabs.harvard.edu/abs/2020arXiv200805772K},
+	adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@article{laga2020survey,
+	title = {A survey on deep learning techniques for stereo-based depth estimation},
+	author = {Laga, Hamid and Jospin, Laurent Valentin and Boussaid, Farid and Bennamoun, Mohammed},
+	year = 2020,
+	journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence}
+}
+@article{tustison2019learning,
+	title = {Learning image-based spatial transformations via convolutional neural networks: A review},
+	author = {Tustison, Nicholas J and Avants, Brian B and Gee, James C},
+	year = 2019,
+	journal = {Magnetic Resonance Imaging},
+	volume = 64,
+	pages = {142--153}
+}
+@article{joshi2004unbiased,
+	title = {Unbiased diffeomorphic atlas construction for computational anatomy},
+	author = {Joshi, Sarang and Davis, Brad and Jomier, Matthieu and Gerig, Guido},
+	year = 2004,
+	journal = {NeuroImage},
+	volume = 23,
+	pages = {S151--S160}
+}
+@article{kobyzev2020normalizing,
+	title = {Normalizing flows: An introduction and review of current methods},
+	author = {Kobyzev, Ivan and Prince, Simon and Brubaker, Marcus},
+	year = 2020,
+	journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence}
+}
+@inproceedings{chen2020exploring,
+	title = {Exploring Simple {Siamese} Representation Learning},
+	author = {Chen, Xinlei and He, Kaiming},
+	year = 2021,
+	booktitle = {CVPR}
+}
+@inproceedings{Kingma15a,
+	title = {{Adam}: A Method for Stochastic Optimization},
+	author = {Kingma, Diederik P. and Ba, Jimmy},
+	year = 2015,
+	booktitle = {ICLR}
+}
+@inproceedings{blitzer2006domain,
+	title = {Domain adaptation with structural correspondence learning},
+	author = {Blitzer, John and McDonald, Ryan and Pereira, Fernando},
+	year = 2006,
+	booktitle = {EMNLP}
+}
+@inproceedings{zhang2020cross,
+	title = {Cross-domain correspondence learning for exemplar-based image translation},
+	author = {Zhang, Pan and Zhang, Bo and Chen, Dong and Yuan, Lu and Wen, Fang},
+	year = 2020,
+	booktitle = {CVPR}
+}
+@inproceedings{marin2020correspondence,
+	title = {Correspondence learning via linearly-invariant embedding},
+	author = {Marin, Riccardo and Rakotosaona, Marie-Julie and Melzi, Simone and Ovsjanikov, Maks},
+	year = 2020,
+	journal = {NeurIPS}
+}
+@inproceedings{hur2019iterative,
+	title = {Iterative residual refinement for joint optical flow and occlusion estimation},
+	author = {Hur, Junhwa and Roth, Stefan},
+	year = 2019,
+	booktitle = {CVPR}
+}
+@inproceedings{hui2018liteflownet,
+	title = {Liteflownet: A lightweight convolutional neural network for optical flow estimation},
+	author = {Hui, Tak-Wai and Tang, Xiaoou and Loy, Chen Change},
+	year = 2018,
+	booktitle = {CVPR}
+}
+@inproceedings{zhou2016learning,
+	title = {Learning dense correspondence via {3D}-guided cycle consistency},
+	author = {Zhou, Tinghui and Krahenbuhl, Philipp and Aubry, Mathieu and Huang, Qixing and Efros, Alexei A},
+	year = 2016,
+	booktitle = {CVPR}
+}
+@inproceedings{ranjan2017optical,
+	title = {Optical flow estimation using a spatial pyramid network},
+	author = {Ranjan, Anurag and Black, Michael J},
+	year = 2017,
+	booktitle = {CVPR}
+}
+@article{risser2011simultaneous,
+	title = {Simultaneous multi-scale registration using large deformation diffeomorphic metric mapping},
+	author = {Risser, Laurent and Vialard, Fran{\c{c}}ois-Xavier and Wolz, Robin and Murgasova, Maria and Holm, Darryl D and Rueckert, Daniel},
+	year = 2011,
+	journal = {IEEE Transactions on Medical Imaging},
+	volume = 30,
+	number = 10,
+	pages = {1746--1759}
+}
+@book{horn1986robot,
+	title = {Robot vision},
+	author = {Horn, Berthold and Klaus, Berthold and Horn, Paul},
+	year = 1986,
+	publisher = {MIT press}
+}
+@inproceedings{niethammer2019metric,
+	title = {Metric learning for image registration},
+	author = {Niethammer, Marc and Kwitt, Roland and Vialard, Francois-Xavier},
+	year = 2019,
+	booktitle = {CVPR}
+}
+@book{nocedal2006numerical,
+	title = {Numerical optimization},
+	author = {Nocedal, Jorge and Wright, Stephen},
+	year = 2006,
+	publisher = {Springer Science \& Business Media}
+}
+@article{hoyer2019neural,
+	title = {Neural reparameterization improves structural optimization},
+	author = {Hoyer, Stephan and Sohl-Dickstein, Jascha and Greydanus, Sam},
+	year = 2020,
+	journal = {CoRR},
+	volume = {abs/1909.04240},
+	archiveprefix = {arXiv},
+	eprint = {1909.04240}
+}
+@article{neyshabur2017,
+	title = {Implicit regularization in deep learning},
+	author = {Neyshabur, Behnam},
+	year = 2017,
+	journal = {arXiv preprint arXiv:1709.01953}
+}
+@inproceedings{cuturi2019,
+	title = {Differentiable ranking and sorting using optimal transport},
+	author = {Cuturi, Marco and Teboul, Olivier and Vert, Jean-Philippe},
+	year = 2019,
+	booktitle = {NeurIPS}
+}
+@inproceedings{engilberge2019sodeep,
+	title = {SoDeep: a Sorting Deep net to learn ranking loss surrogates},
+	author = {Engilberge, Martin and Chevallier, Louis and P{\'e}rez, Patrick and Cord, Matthieu},
+	year = 2019,
+	booktitle = {CVPR}
+}
+@book{liu2011learning,
+	title = {Learning to rank for information retrieval},
+	author = {Liu, Tie-Yan},
+	year = 2011,
+	publisher = {{N}ow publishers}
+}
+@inproceedings{chen1990neural,
+	title = {A neural sorting network with {O(1)} time complexity},
+	author = {Chen, Wen-Tsuen Chen Wen-Tsuen and Hsieh, Kuen-Rong Hsieh Kuen-Rong},
+	year = 1990,
+	booktitle = {IJCNN}
+}
+@article{leshno1993multilayer,
+	title = {Multilayer feedforward networks with a nonpolynomial activation function can approximate any function},
+	author = {Leshno, Moshe and Lin, Vladimir Ya and Pinkus, Allan and Schocken, Shimon},
+	year = 1993,
+	journal = {Neural Networks},
+	volume = 6,
+	number = 6,
+	pages = {861--867}
+}
+@inproceedings{blondel2020fast,
+	title = {Fast differentiable sorting and ranking},
+	author = {Blondel, Mathieu and Teboul, Olivier and Berthet, Quentin and Djolonga, Josip},
+	year = 2020,
+	booktitle = {ICML}
+}
+@article{peyre2019computational,
+	title = {Computational Optimal Transport: With Applications to Data Science},
+	author = {Peyr{\'e}, Gabriel and Cuturi, Marco and others},
+	year = 2019,
+	journal = {Foundations and Trends{\textregistered} in Machine Learning},
+	publisher = {Now Publishers, Inc.},
+	volume = 11,
+	number = {5-6},
+	pages = {355--607}
+}
+@inproceedings{shu2018deforming,
+	title = {Deforming autoencoders: Unsupervised disentangling of shape and appearance},
+	author = {Shu, Zhixin and Sahasrabudhe, Mihir and Alp Guler, Riza and Samaras, Dimitris and Paragios, Nikos and Kokkinos, Iasonas},
+	year = 2018,
+	booktitle = {ECCV}
+}
+@inproceedings{yang2016fast,
+	title = {Fast predictive image registration},
+	author = {Yang, Xiao and Kwitt, Roland and Niethammer, Marc},
+	year = 2016,
+	booktitle = {Deep Learning and Data Labeling for Medical Applications}
+}
+@inproceedings{hart2009optimal,
+	title = {An optimal control approach for deformable registration},
+	author = {Hart, Gabriel L and Zach, Christopher and Niethammer, Marc},
+	year = 2009,
+	booktitle = {CVPR Workshops},
+	pages = {9--16}
+}
+@inproceedings{shah2020pitfalls,
+	title = {The pitfalls of simplicity bias in neural networks},
+	author = {Shah, Harshay and Tamuly, Kaustav and Raghunathan, Aditi and Jain, Prateek and Netrapalli, Praneeth},
+	year = 2020,
+	booktitle = {NeurIPS}
+}
+@book{modersitzki2004numerical,
+	title = {Numerical methods for image registration},
+	author = {Modersitzki, Jan},
+	year = 2004,
+	publisher = {Oxford University Press on Demand}
+}
+@inproceedings{zollei2005efficient,
+	title = {Efficient population registration of {3D} data},
+	author = {Z{\"o}llei, Lilla and Learned-Miller, Erik and Grimson, Eric and Wells, William},
+	year = 2005,
+	booktitle = {International Workshop on Computer Vision for Biomedical Image Applications}
+}
+@inproceedings{boah19,
+	title = {Unsupervised Deformable Image Registration Using Cycle-Consistent {CNN}},
+	author = {Kim, Boah and Kim, Jieun and Lee, June-Goo and Kim, Dong Hwan and Park, Seong Ho and Ye, Jong Chul},
+	year = 2019,
+	booktitle = {MICCAI}
+}
+@article{boah20,
+	title = {CycleMorph: Cycle Consistent Unsupervised Deformable Image Registration},
+	author = {Boah Kim and Dong Hwan Kim and Seong Ho Park and Jieun Kim and June{-}Goo Lee and Jong Chul Ye},
+	year = 2020,
+	journal = {CoRR},
+	volume = {abs/2008.05772},
+	archiveprefix = {arXiv},
+	eprint = {2008.05772}
+}
+@article{zhang18,
+	title = {Inverse-Consistent Deep Networks for Unsupervised Deformable Image Registration},
+	author = {Jun Zhang},
+	year = 2018,
+	journal = {CoRR},
+	volume = {abs/1809.03443},
+	archiveprefix = {arXiv},
+	eprint = {1809.03443},
+	timestamp = {Fri, 05 Oct 2018 11:34:52 +0200},
+	biburl = {https://dblp.org/rec/journals/corr/abs-1809-03443.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{Rholfing12,
+	title = {Image Similarity and Tissue Overlaps as Surrogates for Image Registration Accuracy: Widely Used but Unreliable},
+	author = {Torsten {Rohlfing}},
+	year = 2012,
+	journal = {IEEE Transactions on Medical Imaging},
+	volume = 31,
+	number = 2,
+	pages = {153--163}
+}
+@inproceedings{bhalodia19,
+	title = {A cooperative autoencoder for population-based regularization of {CNN} image registration},
+	author = {Bhalodia, Riddhish and Elhabian, Shireen Y and Kavan, Ladislav and Whitaker, Ross T},
+	year = 2019,
+	booktitle = {MICCAI}
+}
+@misc{karras2018progressive,
+	title = {Progressive Growing of GANs for Improved Quality, Stability, and Variation},
+	author = {Tero Karras and Timo Atila and Samuli Laine and Jaakko Lehtinen},
+	year = 2018,
+	eprint = {1710.10196},
+	archiveprefix = {arXiv},
+	primaryclass = {cs.NE}
+}
+@inproceedings{AmbellanTackEhlkeetal.2018,
+	title = {Automated Segmentation of Knee Bone and Cartilage combining Statistical Shape Knowledge and Convolutional Neural Networks: Data from the {Osteoarthritis Initiative}},
+	author = {Felix Ambellan and Alexander Tack and Moritz Ehlke and Stefan Zachow},
+	year = 2018,
+	booktitle = {MIDL}
+}
+@article{DEPASCALE2016237,
+	title = {The Monge problem with vanishing gradient penalization: Vortices and asymptotic profile},
+	author = {Luigi {De Pascale} and Jean Louet and Filippo Santambrogio},
+	year = 2016,
+	journal = {Journal de Mathématiques Pures et Appliquées},
+	volume = 106,
+	number = 2,
+	pages = {237--279},
+	doi = {https://doi.org/10.1016/j.matpur.2016.02.009},
+	issn = {0021-7824},
+	url = {https://www.sciencedirect.com/science/article/pii/S0021782416000106},
+	keywords = {Optimal transport, Monge problem, Monotone transport, Γ-convergence, Density of smooth maps}
+}
+@article{Michor2005,
+	title = {Vanishing geodesic distance on spaces of submanifolds and diffeomorphisms},
+	author = {Michor, Peter W. and Mumford, David},
+	year = 2005,
+	journal = {Doc. Math.},
+	volume = 10,
+	pages = {217--245},
+	issn = {1431-0635},
+	fjournal = {Documenta Mathematica},
+	mrclass = {58B20 (58D15)},
+	mrnumber = {2148075 (2006g:58013)},
+	mrreviewer = {Leonardo Biliotti}
+}
+@article{DuGrMi1998,
+	title = {Variational Problems on Flows of Diffeomorphisms for Image Matching},
+	author = {P. Dupuis and U. Grenander and M. I. Miller},
+	year = 1998,
+	journal = {Quart. Appl. Math.},
+	volume = 56,
+	pages = {587--600}
+}
+@inproceedings{template_matching,
+	title = {Averaged Template Matching Equations},
+	author = {Hirani, Anil N. and Marsden, Jerrold E. and Arvo, James},
+	year = 2001,
+	booktitle = {Energy Minimization Methods in Computer Vision and Pattern Recognition},
+	publisher = {Springer Berlin Heidelberg},
+	address = {Berlin, Heidelberg},
+	pages = {528--543},
+	editor = {Figueiredo, M{\'a}rio and Zerubia, Josiane and Jain, Anil K.}
+}
+@article{lie1880meme,
+	title = {Theorie der Transformationsgruppen I},
+	author = {Sophus Lie},
+	year = 1880,
+	journal = {Mathematische Annalen},
+	volume = 16,
+	pages = {441–-528}
+}
+@article{REUTER20101181,
+	title = {Highly accurate inverse consistent registration: A robust approach},
+	author = {Martin Reuter and H. Diana Rosas and Bruce Fischl},
+	year = 2010,
+	journal = {NeuroImage},
+	volume = 53,
+	number = 4,
+	pages = {1181--1196},
+	doi = {https://doi.org/10.1016/j.neuroimage.2010.07.020},
+	issn = {1053-8119},
+	url = {https://www.sciencedirect.com/science/article/pii/S1053811910009717},
+	keywords = {Image registration, Robust statistics, Inverse consistent alignment, Motion correction, Longitudinal analysis},
+	abstract = {The registration of images is a task that is at the core of many applications in computer vision. In computational neuroimaging where the automated segmentation of brain structures is frequently used to quantify change, a highly accurate registration is necessary for motion correction of images taken in the same session, or across time in longitudinal studies where changes in the images can be expected. This paper, inspired by Nestares and Heeger (2000), presents a method based on robust statistics to register images in the presence of differences, such as jaw movement, differential MR distortions and true anatomical change. The approach we present guarantees inverse consistency (symmetry), can deal with different intensity scales and automatically estimates a sensitivity parameter to detect outlier regions in the images. The resulting registrations are highly accurate due to their ability to ignore outlier regions and show superior robustness with respect to noise, to intensity scaling and outliers when compared to state-of-the-art registration tools such as FLIRT (in FSL) or the coregistration tool in SPM.}
+}
+@article{baderOptimizedExp,
+	title = {Computing the Matrix Exponential with an Optimized Taylor Polynomial Approximation},
+	author = {Bader, Philipp and Blanes, Sergio and Casas, Fernando},
+	year = 2019,
+	month = 12,
+	journal = {Mathematics},
+	volume = 7,
+	pages = 1174,
+	doi = {10.3390/math7121174}
+}
+@article{eade2013lie,
+	title = {Lie groups for {2D} and {3D} transformations},
+	author = {Eade, Ethan},
+	year = 2013,
+	journal = {URL http://ethaneade. com/lie. pdf, revised Dec},
+	volume = 117,
+	pages = 118
+}
+@misc{luo2021rl,
+	title = {Stochastic Planner-Actor-Critic for Unsupervised Deformable Image Registration},
+	author = {Luo, Ziwei and Hu, Jing and Wang, Xin and Hu, Shu and Kong, Bin and Yin, Youbing and Song, Qi and Wu, Xi and Lyu, Siwei},
+	year = 2021,
+	publisher = {arXiv},
+	doi = {10.48550/ARXIV.2112.07415},
+	url = {https://arxiv.org/abs/2112.07415},
+	copyright = {arXiv.org perpetual, non-exclusive license},
+	keywords = {Image and Video Processing (eess.IV), Artificial Intelligence (cs.AI), Computer Vision and Pattern Recognition (cs.CV), FOS: Electrical engineering, electronic engineering, information engineering, FOS: Electrical engineering, electronic engineering, information engineering, FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+@article{maria2021RemoteSensing,
+	title = {Unsupervised Multistep Deformable Registration of Remote Sensing Imagery Based on Deep Learning},
+	author = {Papadomanolaki, Maria and Christodoulidis, Stergios and Karantzalos, Konstantinos and Vakalopoulou, Maria},
+	year = 2021,
+	journal = {Remote Sensing},
+	volume = 13,
+	number = 7,
+	doi = {10.3390/rs13071294},
+	issn = {2072-4292},
+	url = {https://www.mdpi.com/2072-4292/13/7/1294},
+	article-number = 1294,
+	abstract = {Image registration is among the most popular and important problems of remote sensing. In this paper we propose a fully unsupervised, deep learning based multistep deformable registration scheme for aligning pairs of satellite imagery. The presented method is based on the expression power of deep fully convolutional networks, regressing directly the spatial gradients of the deformation and employing a 2D transformer layer to efficiently warp one image to the other, in an end-to-end fashion. The displacements are calculated with an iterative way, utilizing different time steps to refine and regress them. Our formulation can be integrated into any kind of fully convolutional architecture, providing at the same time fast inference performances. The developed methodology has been evaluated in two different datasets depicting urban and periurban areas; i.e., the very high-resolution dataset of the East Prefecture of Attica, Greece, as well as the high resolution ISPRS Ikonos dataset. Quantitative and qualitative results demonstrated the high potentials of our method.}
+}
+@article{jun2018ICNet,
+	title = {Inverse-Consistent Deep Networks for Unsupervised Deformable Image Registration},
+	author = {Jun Zhang},
+	year = 2018,
+	journal = {CoRR},
+	volume = {abs/1809.03443},
+	url = {http://arxiv.org/abs/1809.03443},
+	eprinttype = {arXiv},
+	eprint = {1809.03443},
+	timestamp = {Fri, 05 Oct 2018 11:34:52 +0200},
+	biburl = {https://dblp.org/rec/journals/corr/abs-1809-03443.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{adni,
+	title = {Alzheimer's Disease Neuroimaging Initiative ({ADNI}): Clinical characterization},
+	author = {Petersen, {R. C.} and Aisen, {P. S.} and Beckett, {L. A.} and Donohue, {M. C.} and Gamst, {A. C.} and Harvey, {D. J.} and Jack, {C. R.} and Jagust, {W. J.} and Shaw, {L. M.} and Toga, {A. W.} and Trojanowski, {J. Q.} and Weiner, {M. W.}},
+	year = 2010,
+	month = jan,
+	journal = {Neurology},
+	publisher = {Lippincott Williams and Wilkins},
+	volume = 74,
+	number = 3,
+	pages = {201--209},
+	doi = {10.1212/WNL.0b013e3181cb3e25},
+	issn = {0028-3878},
+	abstract = {BACKGROUND: Neuroimaging measures and chemical biomarkers may be important indices of clinical progression in normal aging and mild cognitive impairment (MCI) and need to be evaluated longitudinally. OBJECTIVE: To characterize cross-sectionally and longitudinally clinical measures in normal controls, subjects with MCI, and subjects with mild Alzheimer disease (AD) to enable the assessment of the utility of neuroimaging and chemical biomarker measures. METHODS: A total of 819 subjects (229 cognitively normal, 398 with MCI, and 192 with AD) were enrolled at baseline and followed for 12 months using standard cognitive and functional measures typical of clinical trials. RESULTS: The subjects with MCI were more memory impaired than the cognitively normal subjects but not as impaired as the subjects with AD. Nonmemory cognitive measures were only minimally impaired in the subjects with MCI. The subjects with MCI progressed to dementia in 12 months at a rate of 16.5% per year. Approximately 50% of the subjects with MCI were on antidementia therapies. There was minimal movement on the Alzheimer's Disease Assessment Scale-Cognitive Subscale for the normal control subjects, slight movement for the subjects with MCI of 1.1, and a modest change for the subjects with AD of 4.3. Baseline CSF measures of Aβ-42 separated the 3 groups as expected and successfully predicted the 12-month change in cognitive measures. CONCLUSION: The Alzheimer's Disease Neuroimaging Initiative has successfully recruited cohorts of cognitively normal subjects, subjects with mild cognitive impairment (MCI), and subjects with Alzheimer disease with anticipated baseline characteristics. The 12-month progression rate of MCI was as predicted, and the CSF measures heralded progression of clinical measures over 12 months.},
+	language = {English (US)}
+}
+@inproceedings{wolterink2022implicit,
+	title = {Implicit Neural Representations for Deformable Image Registration},
+	author = {Jelmer M. Wolterink and Jesse C. Zwienenberg and Christoph Brune},
+	year = 2022,
+	booktitle = {Medical Imaging with Deep Learning},
+	url = {https://openreview.net/forum?id=BP29eKzQBu3}
+}
+@misc{lin2022GradICON,
+	title = {$\texttt{GradICON}$: Approximate Diffeomorphisms via Gradient Inverse Consistency},
+	author = {Tian, Lin and Greer, Hastings and Vialard, François-Xavier and Kwitt, Roland and Estépar, Raúl San José and Rushmore, Richard Jarrett and Makris, Nikolaos and Bouix, Sylvain and Niethammer, Marc},
+	year = 2022,
+	publisher = {arXiv},
+	doi = {10.48550/ARXIV.2206.05897},
+	url = {https://arxiv.org/abs/2206.05897},
+	copyright = {Creative Commons Attribution Non Commercial No Derivatives 4.0 International},
+	keywords = {Computer Vision and Pattern Recognition (cs.CV), Image and Video Processing (eess.IV), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Electrical engineering, electronic engineering, information engineering, FOS: Electrical engineering, electronic engineering, information engineering}
+}
+@inproceedings{Nazib2021Cnn,
+	title = {A Multiple Decoder {CNN} For Inverse Consistent {3D} Image Registration},
+	author = {Nazib, Abdullah and Fookes, Clinton and Salvado, Olivier and Perrin, Dimitri},
+	year = 2021,
+	booktitle = {2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)},
+	volume = {},
+	number = {},
+	pages = {904--907},
+	doi = {10.1109/ISBI48211.2021.9433911}
+}
+@inproceedings{ferraris2016accurate,
+	title = {Accurate Small Deformation Exponential Approximant to Integrate Large Velocity Fields: Application to Image Registration},
+	author = {Ferraris, Sebastiano and Lorenzi, Marco and Daga, Pankaj and Modat, Marc and Vercauteren, Tom},
+	year = 2016,
+	booktitle = {2016 IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+	volume = {},
+	number = {},
+	pages = {457--464},
+	doi = {10.1109/CVPRW.2016.64}
+}
+@article{hoopes2022learning,
+	title = {Learning the Effect of Registration Hyperparameters with {HyperMorph}},
+	author = {Hoopes, Andrew and Hoffmann, Malte and Greve, Douglas N and Fischl, Bruce and Guttag, John and Dalca, Adrian V},
+	year = 2022,
+	journal = {arXiv preprint arXiv:2203.16680}
+}
+@article{marcus2007open,
+	title = {Open Access Series of Imaging Studies ({OASIS}): cross-sectional {MRI} data in young, middle aged, nondemented, and demented older adults},
+	author = {Marcus, Daniel S and Wang, Tracy H and Parker, Jamie and Csernansky, John G and Morris, John C and Buckner, Randy L},
+	year = 2007,
+	journal = {Journal of cognitive neuroscience},
+	publisher = {MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…},
+	volume = 19,
+	number = 9,
+	pages = {1498--1507}
 }

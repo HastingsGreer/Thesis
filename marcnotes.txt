@@ -1,0 +1,10 @@
+In the introduction your motivation largely seems to be on notation and being able to do things on the blackboard. While this is fine as one motivation I think you want to refocus the introduction on your contributions more broadly. I think it always helps to think about it from the perspective of an NIH reviewer. Why is what you have done significant (i.e., why should other people care about it / be excited about it? What can one do now that was not possible before and why does it matter to be able to do this?)? What is innovative about it (i.e., what are your technical contributions? What is new over what already exists?)? And are there any interesting aspects about the approach you are taking?You want to identify a common theme in your thesis (is it symmetries?) and then relate your contributions to this theme.
+
+Add a thesis statement. This is a short paragraph (maybe 3-5 sentences) that succinctly summarizes the contributions of the thesis. You can look at some of the old theses but these are essentially statements of the form: "This work developed approach A which now allows us to do B much better ..."
+
+You obviously want a better description of the work you have already done. Directly copying the abstract is not a good idea. Try to tell a coherent story and in these sections also get back to the significance, innovation, and approach considerations from point 1.
+
+One of the most important parts will be to describe what you are still planning on doing, what the targeted approaches are, and how you are going to assess if these approaches work.
+
+There should also be a clear timeline that includes targeted submissions of papers, when the remaining parts of the research would likely get finished, and time planned for writing the thesis as well as a target date / semester for the defense.
+

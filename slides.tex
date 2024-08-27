@@ -1,0 +1,88 @@
+\documentclass{beamer}
+\usepackage{tikz}
+\usepackage{booktabs}
+
+\title{Symmetries of the image registration problem}
+\author{Hastings Greer}
+\date{\today}
+
+\begin{document}
+
+% Slide 1: Title
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Thesis Statement}
+Image registration is a problem where the correct solution seems to have inherent symmetries. By making this "seeming" formal, and then restricting deep networks that solve the registration problem to have these same symmetries, we can regularize, simplify, and accelerate training. 
+\end{frame}
+
+% Slide 2: Two-column text
+\begin{frame}{Notation}
+    \begin{columns}
+        \column{0.4\textwidth}
+Inverse Consistency 
+\vskip 1em
+            $\Phi[I^A, I^B] \circ \Phi[I^B, I^A] = Id$
+        \column{0.6\textwidth}
+Equivariance
+\vskip 1em
+            $\Phi[W \circ I^A, U \circ I^B] = W^{-1} \circ \Phi[I^A, I^B] \circ U$
+    \end{columns}
+\end{frame}
+
+% Slide 2: Two-column text
+\begin{frame}{The important symmetries}
+    \begin{columns}
+        \column{0.4\textwidth}
+Inverse Consistency 
+\vskip 1em
+            $\Phi[I^A, I^B] \circ \Phi[I^B, I^A] = Id$
+        \column{0.6\textwidth}
+Equivariance
+\vskip 1em
+            $\Phi[W \circ I^A, U \circ I^B] = W^{-1} \circ \Phi[I^A, I^B] \circ U$
+    \end{columns}
+\end{frame}
+
+
+% Slide 2: Two-column text
+\begin{frame}{The important symmetries}
+    \begin{columns}
+        \column{0.5\textwidth}
+            $\Phi[I^A, I^B] \circ \Phi[I^B, I^A] = Id$
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item Photon-powered toothbrush
+            \item Pocket black hole (for emergencies)
+            \item Time-proof sunscreen (SPF )
+            \item Inflatable space pizza
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Remaining Coursework}
+        \begin{itemize}
+            \item Operating Systems 630 Spring 2025
+            \item Writing Spring 2025
+        \end{itemize}
+\end{frame}
+
+\begin{frame}{Oral Examination}
+        \begin{itemize}
+            \item Operating Systems 630 Spring 2025
+            \item Writing Spring 2025
+        \end{itemize}
+\end{frame}
+
+\begin{frame}{Voxelmorph}
+        \begin{itemize}
+              \item This paper lays out a simple approach to unsupervised neural registration
+		\item $ \Phi_\theta[I^A, I^B](\vec{x}) := \text{Conv}_\theta[\text{cat}(I^A, I^B)](\vec{x}) + \vec{x} $
+              \item minimize over a dataset $\mathcal{L} = \mathcal{L}_\text{sim}(I^A \circ \Phi_\theta[I^A, I^B], I^B] + \mathcal{L_reg}(\Phi_\theta$
+              \item It serves as a standard work for building on and comparing to
+
+        \end{itemize}
+\end{frame}
+
+\end{document}

@@ -225,33 +225,46 @@ $$ \mathcal{L}_{inv} = ||\Phi[I^A, I^B] \circ \Phi[I^B, I^A] - id||^2_2$$
 
 $\Phi$ is a torch module, and we take seriously that it returns a function, not a tensor- it returns a python function that maps tensors of coordinates to tensors of coordinates. Thus,
 
+A typical implementation of $\Phi$ is 
+		$ \Phi_\theta[I^A, I^B](\vec{x}) := \text{Conv}_\theta[\text{cat}(I^A, I^B)](\vec{x}) + \vec{x} $
+
 
 \section{Components of the Thesis already published}
 
 \subsection{ICON}
-\begin{abstract}
+%\begin{abstract}
+%
+%	Learning maps between data samples is fundamental. Applications range from
+%	representation learning, image translation and generative modeling, to the
+%	estimation of spatial deformations. Such maps relate feature vectors, or map
+%	between feature spaces. Well-behaved maps should be regular, which can be
+%	imposed explicitly or may emanate from the data itself. We explore what induces
+%	regularity for spatial transformations, e.g., when computing image
+%	registrations. Classical optimization-based models compute maps between pairs
+%	of samples and rely on an appropriate regularizer for well-posedness. Recent
+%	deep learning approaches have attempted to avoid using such regularizers
+%	altogether by relying on the sample population instead. We explore if it is
+%	possible to obtain spatial regularity using an inverse consistency loss only
+%	and elucidate what explains map regularity in such a context. We find that deep
+%	networks combined with an inverse consistency loss and randomized off-grid
+%	interpolation yield well behaved, approximately diffeomorphic, spatial
+%	transformations. Despite the simplicity of this approach, our experiments
+%	present compelling evidence, on both synthetic and real data, that regular maps
+%	can be obtained without carefully tuned explicit regularizers, while achieving
+%	competitive registration performance.%and only marginal degradation in registration performance.
+%\end{abstract}
 
-	Learning maps between data samples is fundamental. Applications range from
-	representation learning, image translation and generative modeling, to the
-	estimation of spatial deformations. Such maps relate feature vectors, or map
-	between feature spaces. Well-behaved maps should be regular, which can be
-	imposed explicitly or may emanate from the data itself. We explore what induces
-	regularity for spatial transformations, e.g., when computing image
-	registrations. Classical optimization-based models compute maps between pairs
-	of samples and rely on an appropriate regularizer for well-posedness. Recent
-	deep learning approaches have attempted to avoid using such regularizers
-	altogether by relying on the sample population instead. We explore if it is
-	possible to obtain spatial regularity using an inverse consistency loss only
-	and elucidate what explains map regularity in such a context. We find that deep
-	networks combined with an inverse consistency loss and randomized off-grid
-	interpolation yield well behaved, approximately diffeomorphic, spatial
-	transformations. Despite the simplicity of this approach, our experiments
-	present compelling evidence, on both synthetic and real data, that regular maps
-	can be obtained without carefully tuned explicit regularizers, while achieving
-	competitive registration performance.%and only marginal degradation in registration performance.
-\end{abstract}
+It is well known that image registration models should be inverse consistent. The first three papers of my thesis have involved exploiting this property. The first publication, ICON \cite{greer2021icon}, proved the claim that a standard inverse consistency loss is sufficient to make an ordinary network that predicts
+
 The first publication of the thesis, \cite{greer2021icon}, was focused on a novel approach to regularizing image registration: optimizing for inverse consistency and then getting regularity as a side effect. This approach only had one hyperparameter, which was aspirationally could allow training on a new dataset with less tuning needed than multigaussian regularizers, which have may hyperparameters to manually adjust. This publication introduced the "Registration Network" notation, including explicity denoting the input images to the registration network, and the operators TwoStep and Downsample that allow hierarchical multistep registration networks to be constructed.
+
+In this work, we also quietly developed the fundamental software for all following papers in the thesis.
 \subsection{GradICON}
+
+With ICON we had a strong suspicion that policing the diffeomorphic status of the transform via the inverse consistency error was an excellent idea, as yielded smooth diffeomorphic maps without penalizing large deformations. The ICON formulation had issues in practice because it behaved differently at different resolutions of the displacement field, and fell apart particularly for high resolutions.
+Lin Tian and I simultaneously independently discovered that this can be ameliorated by penalizing the gradient of the inverse consistency error instead of the error directly. This lead to a large reduction in transform irregularity and increase in convergence speed. This GradICON regularizer appears to dominate ICON regularization, diffusion regularization, and bending energy regularization for any desired level of transform regularity. 
+
+
 
 \begin{abstract}
 
@@ -309,7 +322,19 @@ rejected, I plan to resubmit to CVPR. For the resubmission, I will add in the 2n
 
 The CVPR submission deadline is in November, but I intend to finish these changes by the end of September
 
-\subsection{Extension of CARL to rotational equivariance}
+\subsection{Pursuit of Rotational equivariance}
+
+The ICON paper left open the issue of convergence speed and a rapidly escalating regularization hyperparameter, and solving this led to the successful GradICON result. Likewise, the CARL result leaves open the question of rotational equivariance, and solving this open question is an attractive topic for follow on research. I will attempt three routes towards developing a general unsupervised registration architecture with built in [W, U] equivariance to a class of transforms including rotation.
+
+\begin{itemize}
+	\item The Keymorph architecture has unimpressive performance but full rotation equivariance. By our construction, a hybrid keymorph-with-refinement-layers architecture could be made to have full rotational equivariance with the performance bonus of a multi-step method. This would have the downside of precluding a general uniGradICON like model, as the keypoints would be organ-specific.
+
+	\item The CARL model should have rotational equivariance if an appropriately invariant feature encoder is used in the coordinate attention block. This was architecture was not used in CARL due to training instability, but I will make an attempt to resolve this by initializing a rotationaly equivariant CARL model using known transforms, following the Keymorph training procedure.
+
+	\item There are hints that the processes of instance optimization and iteration of the TwoStep operator are inherently equivariant. These hints will be fleshed out into formal proofs, and if these proofs suggest an architecture, this will be pursued.
+\end{itemize}
+
+This line of research is not guaranteed to produce a powerful registration network with [W, U] equivariance to rotations, and so I commit to pursuing the above three lines of inquiry, but they may yield null results instead of a publishable result.
 
 
 

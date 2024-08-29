@@ -75,6 +75,16 @@ Equivariance
         \end{itemize}
 \end{frame}
 
+\begin{frame}{Diffeomorphic Demons}
+	\begin{itemize}
+		\item Diffeomorphic Demons is a representative classical image registration approach.
+		\item To preserve diffeomorphism: Store the transfrom as an element of the lie group, derive update in lie algebra, exponentiate and compose.
+		\item Alternate minimizing least squares similarity and regularity. Least squares similarity update done using local linearization of similarity measure + constraint on step size.
+		\item regularization can be done either by regularizing the algebra representation of the update (fluid-like) or regularizing the transform (diffusion-like). Authors prefer diffusion-like.
+
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Voxelmorph}
         \begin{itemize}
               \item This paper lays out a simple approach to unsupervised neural registration
@@ -84,5 +94,19 @@ Equivariance
 
         \end{itemize}
 \end{frame}
+
+\begin{frame}{Probabilistic Voxelmorph}
+        \begin{itemize}
+              \item Two insights: First, pull from traditional registration to make diffeomorphic by construction:
+	      \item $ \Phi_\theta[I^A, I^B](\vec{x}) := exp(\text{Conv}_\theta[\text{cat}(I^A, I^B)](\vec{x}))$
+              \item Second, use a formulation similar to a variational autoencoder to formulate registration as finding the most likely transform
+
+	      \item $  p(\text{fixed image} | \text{transform latent}; \text{moving image} ) = \mathcal{N}(\text{fixed image}; \text{moving image} \circ \phi_{\text{transform latent}}, \sigma^2)$
+
+	      \item Then, transform regularity is just a gaussian prior on the transform latent
+
+        \end{itemize}
+\end{frame}
+
 
 \end{document}
